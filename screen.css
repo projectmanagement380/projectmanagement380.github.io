@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 * {
-  box-sizing: border-box;
-  /* changes width property
+    box-sizing: border-box;
+    /* changes width property
     to total width instead of content width */
 }
 
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 article,
@@ -21,72 +21,72 @@ section,
 main,
 figcaption,
 figure {
-  display: block;
-  /* just in case we have
+    display: block;
+    /* just in case we have
     any older browsers that don't recognize
     the HTML5 semantic elements */
 }
 
 #page-header {
-  /*  align header and set background */
-  display: flex;
-  align-items: center;
+    /*  align header and set background */
+    display: flex;
+    align-items: center;
 }
 
 .site-name {
-  /*  adust font in header */
-  font-size: 2em;
-  font-weight: 600;
-  font-family: Sansita, "gadget", generic-family;
-  font-style: italic;
+    /*  adust font in header */
+    font-size: 2em;
+    font-weight: 600;
+    font-family: Sansita, "gadget", generic-family;
+    font-style: italic;
 }
 
 nav {
-  /*  move nav to bottom */
-  order: 4;
-  padding: 4px;
+    /*  move nav to bottom */
+    order: 4;
+    padding: 4px;
 }
 
 nav a:link {
-  /*unvisited link*/
-  text-decoration: none;
+    /*unvisited link*/
+    text-decoration: none;
 }
 
 nav a:visited {
-  /*visited link*/
+    /*visited link*/
 }
 
 nav a:hover,
 a:focus {
-  /*Link: hover, Link:Focus:*/
+    /*Link: hover, Link:Focus:*/
 }
 
 nav ul {
-  /*    style of nav bar*/
-  display: flex;
-  list-style: none;
-  padding-left: 0;
+    /*    style of nav bar*/
+    display: flex;
+    list-style: none;
+    padding-left: 0;
 }
 
 nav ul li {
-  /*  sizing of nav bar*/
-  padding-right: 1em;
-  text-align: center;
+    /*  sizing of nav bar*/
+    padding-right: 1em;
+    text-align: center;
 }
 
 body {
-  /* remove any margin and padding from body */
-  display: flex;
-  flex-direction: column;
-  font-family: 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
+    /* remove any margin and padding from body */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
 main {
-  /*  add background image and styling components*/
-  background-size: cover;
+    /*  add background image and styling components*/
+    background-size: cover;
 }
 
 h1,
@@ -95,80 +95,64 @@ h3,
 h4,
 h5,
 h6 {
-  /*  style fonts to headings */
-  font-family: Sansita, 'Geneva', generic-family;
+    /*  style fonts to headings */
+    font-family: Sansita, 'Geneva', generic-family;
 }
 
 
 footer {
-  /*  footer alignment */
-  line-height: 70px;
-  order: 3;
+    /*  footer alignment */
+    line-height: 70px;
+    order: 3;
 }
-
-
-
-
-
-
-@media screen and (max-width: 480px) {
-  nav {
-    /*  move nav to top */
-    background-color: #0E89D5;
-    font-size: 4vw;
-  }
-}
-
-
-
 
 
 
 /* when on large screen */
 
-@media screen and (min-width: 450px) {
-  * {
-    box-sizing: border-box;
-    /* changes width property
+@media screen and (min-width: 520px) {
+    * {
+        box-sizing: border-box;
+        /* changes width property
   to total width instead of content width */
-  }
-
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-
-    main {
-        height:  400px
     }
 
-  article,
-  aside,
-  footer,
-  header,
-  nav,
-  section,
-  main,
-  figcaption,
-  figure {
-    display: block;
-    /* just in case we have
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    main {
+        height: 400px
+    }
+
+    article,
+    aside,
+    footer,
+    header,
+    nav,
+    section,
+    main,
+    figcaption,
+    figure {
+        display: block;
+        /* just in case we have
   any older browsers that don't recognize
   the HTML5 semantic elements */
-  }
+    }
 
-  #page-header {
-    /*  align header and set background */
-    order: -2;
-  }
+    #page-header {
+        /*  align header and set background */
+        order: -2;
+    }
 
-  nav {
-    /*  move nav to top */
-    order: -1;
-  }
+    nav {
+        /*  move nav to top */
+        order: -1;
+    }
 
-  main h1 {
-    /*  add smaller margin to top and bottom*/
-    margin: 10px 0 10px;
-  }
+    main h1 {
+        /*  add smaller margin to top and bottom*/
+        margin: 10px 0 10px;
+    }
 }
