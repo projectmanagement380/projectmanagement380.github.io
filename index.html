@@ -7,31 +7,45 @@
     <title>Home Page | projectmanagement380.github.io</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
-    <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <!--  the code in this element will be displayed in the web browser-->
-    <header id=page-header>
-        <!--    helps identify the sight-->
-        <h1 class="site-name">projectmanagement380.github Home</h1>
+    <header class="main-header">
+        <div>
+            <a href="index.html" class="main-header">
+                <img src="images/LogoMakr_6ZM2sG.png" width="300px" hight="450px" class="main-header_logo"></img>
+            </a>
+        </div>
+        <!-- HTML for SEARCH BAR -->
+        <div id="tfheader">
+            <form id="tfnewsearch" method="get" action="http://www.google.com">
+                <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+            </form>
+            <div class="tfclear"></div>
+        </div>
+        <!-- Navigation Menue -->
+        <nav class="main-nav">
+            <ul class="main-nav_items">
+                <!--
+                <li class="main-nav_item main-nav_item--cta">
+                    <a title="Home" href="index.html">Home</a></li>
+-->
+                <li class="main-nav_item">
+                    <a title="Book 1" href="book1.html">Book 1</a></li>
+                <li class="main-nav_item">
+                    <a title="Book 2" href="book2.html">Book 2</a> </li>
+                <li class="main-nav_item">
+                    <a title="Book 3" href="book3.html">Book3</a></li>
+                <li class="main-nav_item">
+                    <a title="Videos" href="">Videos</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <!--    helps to navigate though out our websight-->
-        <ul>
-            <li><a title="Home" href="">Home</a></li>
-            <li><a title="Book 1" href="">Book 1</a></li>
-            <li><a title="Book 2" href="">Book 2</a> </li>
-            <li> <a title="Book 3" href="">Book3</a></li>
-            <li><a title="Videos" href="">Videos</a></li>
-        </ul>
-    </nav>
 
     <main>
         <section class=home>
-            <h1>Home Page</h1>
-            <p>Use links to get to your destination.</p>
+
         </section>
     </main>
 
@@ -40,4 +54,5 @@
         <small> &copy;2018 CIT 380 </small>
     </footer>
 </body>
+
 </html>
