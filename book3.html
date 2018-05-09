@@ -1,28 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Book 3 | ProjectManagement380.github | Summary</title>
-    <meta name="description" content="Short Description of the page.">
+
+<head>
+    <!--the code in this element will not be displayed but the information for the web is needed here-->
+    <meta charset="utf-8">
+    <title>Home Page | projectmanagement380.github.io</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
-    <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
-        <h1>Book Three</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html" title="Go to home page">Site Home</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Chapter 1</h2>
+    <header class="main-header">
+        <div>
+            <a href="index.html" class="main-header">
+                <img src="images/LogoMakr_6ZM2sG.png" width="300px" hight="450px" class="main-header_logo"></img>
+            </a>
+        </div>
+        <!-- HTML for SEARCH BAR -->
+        <div id="tfheader">
+            <form id="tfnewsearch" method="get" action="http://www.google.com">
+                <input type="text" class="tftextinput" name="q" size="38" maxlength="120"><input type="submit" value="search" class="tfbutton">
+            </form>
+            <div class="tfclear"></div>
+        </div>
+        <!-- Navigation Menue -->
+        <nav class="main-nav">
+            <ul class="main-nav_items">
 
+                <li class="main-nav_item main-nav_item--cta">
+                    <a title="Home" href="index.html">Home</a></li>
+                <li class="main-nav_item main-nav_item--cta">
+                    <a title="Book 1" href="book1.html">Book 1</a></li>
+                <li class="main-nav_item main-nav_item--cta">
+                    <a title="Book 2" href="book2.html">Book 2</a> </li>
+                <li class="main-nav_item main-nav_item--cta">
+                    <a title="Book 3" href="book3.html">Book3</a></li>
+                <li class="main-nav_item main-nav_item--cta">
+                    <a title="Videos" href="">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Book Three</h1>
+        <section class=home>
+            <h2>Chapter 1</h2>
+
+        </section>
     </main>
+
     <footer>
-        &copy;2017 Your name here
+        <!--    provides info about sight-->
+        <small> &copy;2018 CIT 380 </small>
     </footer>
 </body>
+
 </html>
