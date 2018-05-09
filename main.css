@@ -31,50 +31,33 @@ body {
     flex-direction: column;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
-    padding: 0;
     font-size: 20px;
 }
 
 #tfheader {
-    float: right;
-    vertical-align: middle;
     margin-top: 25px;
 }
 
-#tfnewsearch {
-    float: right;
-    padding: 0px;
-    margin-right: 5px;
-}
 
 .tftextinput {
-    margin: 0;
-    padding: 5px 15px;
+    margin-left: 13px;
+    padding: 7px 12px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     border: 1px solid #60b0f4;
     border-right: 0px;
-    border-top-left-radius: 5px 5px;
-    border-bottom-left-radius: 5px 5px;
 }
 
 .tfbutton {
-    margin: 0;
     padding: 5px 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    outline: none;
     cursor: pointer;
-    text-align: center;
-    text-decoration: none;
     color: #ffffff;
     border: solid 1px #60b0f4;
     border-right: 0px;
-    background: #60b0f4;
     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to( #60b0f4));
     background: -moz-linear-gradient(top, #00adee, #0078a5);
-    border-top-right-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
 }
 
 .tfbutton:hover {
@@ -95,44 +78,39 @@ body {
     clear: both;
 }
 
+main {
+    text-align: center
+}
+
 .main-header {
-    width: 100%;
     background: white;
 }
 
-.main-header>div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .main-header_logo {
-    margin-left: 5px;
+    margin-left: 50px;
 }
 
-.main-nav {
-    float: right;
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 74px);
-}
+.main-nav {}
 
 .main-nav_items {
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    list-style: none;
 }
 
 .main-nav_item {
     display: inline-block;
+<<<<<<< HEAD
     margin: 30 15px;
     background: #ff1b68;
+=======
+    margin: 0, 1px;
+>>>>>>> 70e5f4595156d67f029bc007d2b47a5de437df86
 }
 
 .main-nav_item a {
     color: #e6007e;
     text-decoration: none;
     font-weight: bold;
-    padding: 3px 0
 }
 
 .main-nav_item a:hover,
@@ -148,27 +126,121 @@ body {
     border-radius: 5px;
 }
 
-main {
-    /*  add background image and styling components*/
-    background-size: cover;
+footer {
+    border-top-style: solid;
+    text-align: center;
+    font-size: 12px
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /*  style fonts to headings */
-    font-family: Sansita, 'Geneva', generic-family;
-}
+/* when on medium screen */
+@media screen and (min-width: 474px) {
+* {
+        box-sizing: border-box;
+        changes width property to total width instead of content width
+    }
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    main {
+        width: 100%;
+        height: 700px;
+        text-align: left;
+    }
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
 
-footer {}
+    article,
+    aside,
+    footer,
+    section,
+    main,
+    figcaption,
+    figure {
+        display: block;
+        /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+    }
+
+    body {
+        background-color: #60b0f4;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Helvetica', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    #tfheader {
+        float:left;
+        vertical-align: middle;
+        margin-top: 25px;
+    }
+
+    #tfnewsearch {
+        float:left;
+        padding: 0px;
+        margin-right: 5px;
+    }
+
+    .tftextinput {
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        border: 1px solid #60b0f4;
+        border-right: 0px;
+        border-top-left-radius: 5px 5px;
+        border-bottom-left-radius: 5px 5px;
+    }
+
+
+    /* Fixes submit button height problem in Firefox */
+    .tfbutton::-moz-focus-inner {
+        border: 0;
+    }
+
+    .tfclear {
+        clear: both;
+    }
+
+    .main-header_logo {
+        margin-left: 50px;
+    }
+
+    .main-nav {
+        float: left;
+        display: inline-block;
+        width: calc(100% - 74px);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        /*  style fonts to headings */
+        font-family: Sansita, 'Geneva', generic-family;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
 
 
 /* when on large screen */
 
+<<<<<<< HEAD
 @media screen and (min-width: 474px) {
+=======
+@media screen and (min-width: 750px) {
+>>>>>>> 70e5f4595156d67f029bc007d2b47a5de437df86
     * {
         box-sizing: border-box;
         changes width property to total width instead of content width
@@ -180,7 +252,16 @@ footer {}
     main {
         width: 100%;
         height: 700px;
+<<<<<<< HEAD
+=======
+        text-align: left;
+>>>>>>> 70e5f4595156d67f029bc007d2b47a5de437df86
     }
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
     article,
     aside,
     footer,
@@ -190,11 +271,147 @@ footer {}
     figure {
         display: block;
         /* just in case we have
-  any older browsers that don't recognize
-  the HTML5 semantic elements */
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
     }
-    main h1 {
-        /*  add smaller margin to top and bottom*/
-        margin: 10px 0 10px;
+
+    body {
+        background-color: #60b0f4;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Helvetica', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
     }
+
+    #tfheader {
+        float: right;
+        vertical-align: middle;
+        margin-top: 25px;
+    }
+
+    #tfnewsearch {
+        float: right;
+        padding: 0px;
+        margin-right: 5px;
+    }
+
+    .tftextinput {
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        border: 1px solid #60b0f4;
+        border-right: 0px;
+        border-top-left-radius: 5px 5px;
+        border-bottom-left-radius: 5px 5px;
+    }
+
+    .tfbutton {
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        border: solid 1px #60b0f4;
+        border-right: 0px;
+        background: #60b0f4;
+        background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to( #60b0f4));
+        background: -moz-linear-gradient(top, #00adee, #0078a5);
+        border-top-right-radius: 5px 5px;
+        border-bottom-right-radius: 5px 5px;
+    }
+
+    .tfbutton:hover {
+        text-decoration: none;
+        background: #60b0f4;
+        background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to( #60b0f4));
+        background: -moz-linear-gradient(top, #0095cc, #00678e);
+    }
+
+
+    /* Fixes submit button height problem in Firefox */
+    .tfbutton::-moz-focus-inner {
+        border: 0;
+    }
+
+    .tfclear {
+        clear: both;
+    }
+
+    .main-header {
+        width: 100%;
+        background: white;
+    }
+
+    .main-header > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .main-header_logo {
+        margin-left: 5px;
+    }
+
+    .main-nav {
+        float: right;
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 74px);
+    }
+
+    .main-nav_items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .main-nav_item {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .main-nav_item a {
+        color: #e6007e;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 3px 0
+    }
+
+    .main-nav_item a:hover,
+    .main-nav_item a:active {
+        color: #60b0f4;
+    }
+
+
+    /*
+.main-nav_item--cta a {
+    color: #60b0f4;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+*/
+    main {
+        /*  add background image and styling components*/
+        background-size: cover;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        /*  style fonts to headings */
+        font-family: Sansita, 'Geneva', generic-family;
+    }
+
+    footer {}
+
 }
