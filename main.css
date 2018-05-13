@@ -25,11 +25,9 @@ figure {
 
 body {
     background-color: #60b0f4;
-    display: flex;
     flex-direction: column;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
-    font-size: 20px;
 }
 
 #tfheader {
@@ -39,7 +37,6 @@ body {
 .tftextinput {
     margin-left: 13px;
     padding: 7px 12px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     border: 1px solid #60b0f4;
     border-right: 0px;
@@ -47,7 +44,6 @@ body {
 
 .tfbutton {
     padding: 5px 15px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     cursor: pointer;
     color: #ffffff;
@@ -75,7 +71,7 @@ body {
 }
 
 main {
-     height: 700px;
+    height: 700px;
     text-align: center
 }
 
@@ -85,14 +81,13 @@ main {
 
 .main-header_logo {
     margin-left: 50px;
-    max-width: 100%;
-    height: auto;
+    max-width:inherit;
 }
 
 .main-nav {
-    font-size: 12px;
+    display: flex;
+    flex-flow: nowrap;
 }
-
 .main-nav_items {
     padding: 0;
     margin: 0;
@@ -104,8 +99,6 @@ main {
 .main-nav_item {
     display: inline-block;
     margin-top: 30px;
-    background: #ff1b68;
-    margin: 0, 1px;
 }
 
 .main-nav_item a {
@@ -122,7 +115,7 @@ main {
 .main-nav_item--cta a {
     color: #e6007e;
     background: #60b0f4;
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 5px;
 }
 
@@ -131,6 +124,9 @@ footer {
     text-align: center;
     font-size: 12px
 }
+
+
+
 
 /* when on medium screen */
 
