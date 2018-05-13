@@ -36,11 +36,14 @@ body {
 
 .tftextinput {
     margin-left: 13px;
-    padding: 7px 12px;
-    font-size: 10px;
+
+    padding: 5px 15px;
+    font-size: 14px;
+    width: 250px;
     border: 1px solid #60b0f4;
     border-right: 0px;
 }
+
 
 .tfbutton {
     padding: 5px 15px;
@@ -51,6 +54,7 @@ body {
     border-right: 0px;
     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to( #60b0f4));
     background: -moz-linear-gradient(top, #00adee, #0078a5);
+    flex-wrap: nowrap;
 }
 
 .tfbutton:hover {
@@ -63,7 +67,7 @@ body {
 /* Fixes submit button height problem in Firefox */
 
 .tfbutton::-moz-focus-inner {
-    border: 0;
+    border: 3px;
 }
 
 .tfclear {
@@ -72,22 +76,29 @@ body {
 
 main {
     height: 700px;
-    text-align: center
+    text-align: center;
 }
 
+
 .main-header {
+    display: inline-block;
     background: white;
 }
 
 .main-header_logo {
     margin-left: 50px;
-    max-width:inherit;
+
 }
 
 .main-nav {
-    display: flex;
+
     flex-flow: nowrap;
 }
+
+.main-header > div {
+    display: inline-block;
+}
+
 .main-nav_items {
     padding: 0;
     margin: 0;
@@ -99,6 +110,7 @@ main {
 .main-nav_item {
     display: inline-block;
     margin-top: 30px;
+    order: 1;
 }
 
 .main-nav_item a {
@@ -138,6 +150,9 @@ footer {
         margin: 0;
         padding: 5px 15px;
         font-size: 14px;
+    }
+    .tfbutton {
+        margin-right: 150px;
     }
     .main-nav {
         padding-top: 30px;
