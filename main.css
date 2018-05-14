@@ -25,9 +25,11 @@ figure {
 
 body {
     background-color: #60b0f4;
+    display: flex;
     flex-direction: column;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
+    font-size: 20px;
 }
 
 #tfheader {
@@ -35,18 +37,18 @@ body {
 }
 
 .tftextinput {
-    margin-left: 13px;
-
+    margin-left: 40px;
     padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     width: 250px;
     border: 1px solid #60b0f4;
     border-right: 0px;
 }
 
-
 .tfbutton {
     padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     cursor: pointer;
     color: #ffffff;
@@ -54,7 +56,6 @@ body {
     border-right: 0px;
     background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to( #60b0f4));
     background: -moz-linear-gradient(top, #00adee, #0078a5);
-    flex-wrap: nowrap;
 }
 
 .tfbutton:hover {
@@ -67,7 +68,7 @@ body {
 /* Fixes submit button height problem in Firefox */
 
 .tfbutton::-moz-focus-inner {
-    border: 3px;
+    border: 0;
 }
 
 .tfclear {
@@ -75,42 +76,37 @@ body {
 }
 
 main {
-    height: 700px;
     text-align: center;
+    height: 700px;
+    background-image: url(images/backgroundeditsmall.jpg);
+    background-repeat: no-repeat;
 }
 
-
 .main-header {
-    display: inline-block;
     background: white;
 }
 
 .main-header_logo {
     margin-left: 50px;
-
+    max-width: 100%;
+    height: auto;
 }
 
 .main-nav {
-
-    flex-flow: nowrap;
-}
-
-.main-header > div {
-    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 9px;
 }
 
 .main-nav_items {
-    padding: 0;
     margin: 0;
-    padding: 0;
-    list-style: none;
+    margin-top: 30px;
 }
-
 
 .main-nav_item {
     display: inline-block;
-    margin-top: 30px;
-    order: 1;
+    background: #ff1b68;
+    margin: 0, 1px;
 }
 
 .main-nav_item a {
@@ -127,7 +123,7 @@ main {
 .main-nav_item--cta a {
     color: #e6007e;
     background: #60b0f4;
-    padding: 8px 8px;
+    padding: 8px 16px;
     border-radius: 5px;
 }
 
@@ -139,35 +135,40 @@ footer {
 
 
 
-
 /* when on medium screen */
 
 @media screen and (min-width: 474px) {
     main {
         text-align: left;
+        background-image: url(images/backgroundedit.jpg);
+        background-size:cover;
     }
-    .tftextinput {
-        margin: 0;
-        padding: 5px 15px;
-        font-size: 14px;
-    }
+
     .tfbutton {
         margin-right: 150px;
     }
     .main-nav {
         padding-top: 30px;
         display: inline-block;
+        font-size: 12px;
     }
-    footer {
-        font-size: 16px;
-        padding: 10px;
-    }
+
+}
+
+footer {
+    font-size: 16px;
+    padding: 10px;
+}
+
 }
 
 
 /* when on large screen */
 
 @media screen and (min-width: 780px) {
+    main {
+        background-image: url(images/backgroundedit.jpg);
+    }
     #tfheader {
         float: right;
     }
