@@ -126,6 +126,9 @@ main {
     padding: 8px 16px;
     border-radius: 5px;
 }
+p{
+    margin-left: 30px;
+}
 
 footer {
     border-top-style: solid;
