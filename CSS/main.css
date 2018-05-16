@@ -78,7 +78,7 @@ body {
 main {
     text-align: center;
     height: 700px;
-    background-image: url(images/backgroundeditsmall.jpg);
+    background-image: url(/images/backgroundeditsmall.jpg);
     background-repeat: no-repeat;
 }
 
@@ -126,8 +126,14 @@ main {
     padding: 8px 16px;
     border-radius: 5px;
 }
-p{
+
+p {
     margin-left: 30px;
+}
+
+.home {
+    margin-left: 40px;
+    color: #e6007e;
 }
 
 footer {
@@ -142,9 +148,13 @@ footer {
 
 @media screen and (min-width: 474px) {
     main {
+        color:#e6007e;
         text-align: left;
-        background-image: url(images/backgroundedit.jpg);
-        background-size:cover;
+        background-image: url(/images/backgroundedit.jpg);
+        background-size: cover;
+    }
+    main h1{
+        margin-left: 40px;
     }
 
     .tfbutton {
@@ -170,7 +180,7 @@ footer {
 
 @media screen and (min-width: 780px) {
     main {
-        background-image: url(images/backgroundedit.jpg);
+        background-image: url(/images/backgroundedit.jpg);
     }
     #tfheader {
         float: right;
