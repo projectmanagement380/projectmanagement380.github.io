@@ -10,9 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 </head>
 
 <body>
+    <div class="background">
+        <img src="images/background-img.jpg" alt="Project Management">
+    </div>
+
+
     <header class="main-header">
         <div>
             <a href="index.html" class="main-header">
@@ -20,7 +26,7 @@
             </a>
         </div>
 
-        <!-- Navigation Menue -->
+        <!--Navigation Menue -->
 
         <div class="topnav">
             <a href="index.html"><i class=" fa fa-home "></i></a>
@@ -30,12 +36,13 @@
             <a href="about-us.html">About us</a>
             <div class="search-container">
                 <form action="http://www.google.com">
-                    <input type="text" placeholder="Google Search" name="search" size="38" maxlength="120">
+                    <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
     </header>
+
 
     <script>
         let nav = document.getElementById('navigation');
@@ -43,11 +50,11 @@
         function toggleMenu() {
             nav.classList.toggle('navigation--visible');
         }
+
     </script>
 
-    <main class=home>
-        <h1>Welcome to Project Management</h1>
-        <h2>CIT360</h2>
+    <main>
+        <h1 id="main_pm">Welcome to Project Management</h1>
 
     </main>
 
