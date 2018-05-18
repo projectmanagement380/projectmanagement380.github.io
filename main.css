@@ -19,8 +19,10 @@ body {
 }
 
 .background {
+    /*
     background-size: cover;
     background-repeat: no-repeat;
+*/
     width: 100%;
     height: auto;
     position: fixed;
@@ -80,7 +82,8 @@ body {
     margin-top: 8px;
     font-size: 17px;
     border: none;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .topnav .search-container button {
@@ -118,6 +121,17 @@ body {
     .topnav input[type=text] {
         border: 1px solid #ccc;
     }
+
+    .home {
+        font-size: 22vm;
+    }
+
+
+    /*
+    footer {
+        margin-top: 100%;
+    }
+*/
 }
 
 #main_pm {
@@ -126,20 +140,15 @@ body {
     font-size: 3vw;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    max-width: 100%;
-    padding: 45px;
+    padding: 3%;
     width: 60%;
 
 }
 
-.home {
-/*    margin-top: 130px;*/
-
-}
 
 footer {
-    padding: 30px;
-    margin-top: 30%;
+    padding: 3%;
+    margin-top: 35%;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     color: white;
