@@ -17,7 +17,7 @@ body {
     margin: 0;
     font-size: 20px;
     background-image: url(/images/background-img-large.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -123,7 +123,9 @@ footer {
     width: 100%;
     color: white;
     text-align: center;
+    font-size: 3vw;
 }
+
 
 @media screen and (max-width: 600px) {
     .topnav .search-container {
@@ -149,13 +151,16 @@ footer {
     }
 
     .background {
-        background-image: url(/images/background-img-large.jpg);
+        background-image: url(/images/background-img-small.jpg);
         background-size: cover;
     }
-}
-
-/*
     footer {
-        margin-top: 100%;
+        padding: 3%;
+        margin-top: 35%;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 2vw;
     }
-*/
+}
