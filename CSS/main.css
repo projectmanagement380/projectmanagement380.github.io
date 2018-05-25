@@ -19,11 +19,7 @@ body {
 }
 
 .background {
-    /*
-    background-size: cover;
-    background-repeat: no-repeat;
-*/
-    width: 100%;
+    <<<<<<< HEAD: main.css width: 100%;
     height: auto;
     position: fixed;
     z-index: -1;
@@ -84,6 +80,7 @@ body {
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    
 }
 
 .topnav .search-container button {
@@ -127,11 +124,7 @@ body {
     }
 
 
-    /*
-    footer {
-        margin-top: 100%;
-    }
-*/
+    <<<<<<< HEAD:main.css <<<<<<< HEAD:main.css======= > > > > > > > 5b57e160fb1a17d0d8a76af39cdb73150810cc25:CSS/main.css
 }
 
 #main_pm {
