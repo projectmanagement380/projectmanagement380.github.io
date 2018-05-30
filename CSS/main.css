@@ -16,7 +16,7 @@ body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     font-size: 20px;
-    background-image: url(/images/background-img-large.jpg);
+    background-image: url(/images/download.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -102,11 +102,20 @@ body {
 
 .topnav .search-container button:hover {
     opacity: 0.8;
+}
 
+.mainnav a{
+    text-decoration: none;
+    color: deeppink
+}
+
+.mainnav a:hover {
+    color:  #60b0f4;
 }
 
 #main_pm {
     margin-top: 7%;
+    margin-left: 0;
     font-family: 'Play', sans-serif;
     font-size: 3vw;
     background: rgba(0, 0, 0, 0.5);
@@ -114,6 +123,15 @@ body {
     padding: 3%;
     width: 60%;
 
+}
+
+h1,
+h2 {
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 40px;
 }
 
 footer {
