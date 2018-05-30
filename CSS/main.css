@@ -10,26 +10,17 @@
 }
 
 body {
-    background: #60b0f4;
     display: flex;
     flex-direction: column;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     font-size: 20px;
-    background-image: url(/images/download.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .background {
-    /*
+    background-image: url(/images/wooden-boards-texture-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-*/
-    width: 100%;
-    height: auto;
-    position: fixed;
-    z-index: -1;
 }
 
 .container {
@@ -104,13 +95,13 @@ body {
     opacity: 0.8;
 }
 
-.mainnav a{
+.mainnav a {
     text-decoration: none;
     color: deeppink
 }
 
 .mainnav a:hover {
-    color:  #60b0f4;
+    color: #60b0f4;
 }
 
 #main_pm {
@@ -136,7 +127,6 @@ p {
 
 footer {
     padding: 3%;
-    margin-top: 35%;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     color: white;
@@ -169,8 +159,9 @@ footer {
     }
 
     .background {
-        background-image: url(/images/background-img-small.jpg);
+        background-image: url(/images/wooden-boards-texture-background.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
     }
     footer {
         padding: 3%;
