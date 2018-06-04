@@ -17,18 +17,30 @@ body {
     height: 900px;
     display: flex;
     flex-direction: column;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica',
+    sans-serif;
     margin: 0;
     font-size: 20px;
 }
 
 .background {
+<<<<<<< HEAD
     background-image: url(/images/wooden-boards-texture-background.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter:hue-rotate(180deg)
+=======
+    background-size: cover;
+    background-repeat: no-repeat;
+/*
+    width: 100%;
+    height: auto;
+*/
+    position: fixed;
+    z-index: -1;
+>>>>>>> bee2246fe4de1ac607e517cff7d9fb08e77a5675
 }
 
 .container {
@@ -84,7 +96,9 @@ body {
     margin-top: 8px;
     font-size: 17px;
     border: none;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
 }
 
 .topnav .search-container button {
@@ -184,6 +198,7 @@ footer {
         font-size: 22vm;
     }
 
+<<<<<<< HEAD
     .background {
         background-image: url(/images/wooden-boards-texture-background.jpg);
         height: 100%;
@@ -200,4 +215,29 @@ footer {
         text-align: center;
         font-size: 2vw;
     }
+=======
+
+    <<<<<<< HEAD:main.css <<<<<<< HEAD:main.css======= > > > > > > > 5b57e160fb1a17d0d8a76af39cdb73150810cc25:CSS/main.css
+}
+
+#main_pm {
+    margin-top: 7%;
+    font-family: 'Play', sans-serif;
+    font-size: 3vw;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding: 3%;
+    width: 60%;
+
+}
+
+
+footer {
+    padding: 3%;
+    margin-top: 35%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+    text-align: center;
+>>>>>>> bee2246fe4de1ac607e517cff7d9fb08e77a5675
 }
