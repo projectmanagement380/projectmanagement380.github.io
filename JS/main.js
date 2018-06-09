@@ -33,10 +33,3 @@ function bookThreeIntro() {
     }
 }
 
-// $(document).ready(function() {
-//     function setPaddingBottom() {
-//       $('.content').css('padding-bottom', $('footer').innerHeight());
-//     }
-//     setPaddingBottom();
-//     $(window).resize(setPaddingBottom);
-//   });

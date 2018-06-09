@@ -65,6 +65,7 @@ body {
 
 .topnav a:hover {
     color: deeppink;
+    font-weight: bold;
 }
 
 .topnav a.active {
