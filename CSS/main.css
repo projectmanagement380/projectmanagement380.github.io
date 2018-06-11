@@ -1,203 +1,398 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 * {
-    box-sizing: border-box;
-
+   box-sizing: border-box;
 }
 
 *:before,
 *:after {
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 html {
-    height: 100%;
+   /* height: 100%; */
+   /* background: url(/images/rawpixel__unsplash.jpg); */
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 body {
-    height: 900px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Helvetica', sans-serif;
-    margin: 0;
-    font-size: 20px;
+   /* height: 100%; */
+   font-family: 'Helvetica', sans-serif;
+   margin: 0;
+   font-size: 1rem;
 }
 
-.background {
-    background-image: url(/images/wooden-boards-texture-background.jpg);
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter:hue-rotate(180deg)
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
+.wrapper {
+   position: relative;
+   box-sizing: border-box;
+   width: 100%;
+   min-height: 100vh;
+   padding: 1px 0;
 }
 
 .main-header {
-    width: 100%;
-    background: white;
+   width: 100vw;
+   background: white;
 }
 
 .main-header_logo {
-    margin-left: 5px;
+   margin-left: 0.7rem;
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: #e9e9e9;
-    margin-top: 0;
-    width: 100%;
+   overflow: hidden;
+   background-color: #e9e9e9;
+   margin-top: 0;
+   width: 100vw;
 }
 
 .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+   float: left;
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 0.875rem 1rem;
+   text-decoration: none;
+   font-size: 1rem;
 }
 
 .topnav a:hover {
-    background-color: #666666;
-    color: white;
+   color: deeppink;
+   font-weight: bold;
 }
 
 .topnav a.active {
-    background-color: #60b0f4;
-    color: white;
+   background-color: #60b0f4;
+   color: white;
 }
 
 .topnav .search-container {
-    float: right;
-    vertical-align: top;
-
+   float: right;
+   vertical-align: top;
 }
 
 .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    border-radius: 5px;
+   padding: 0.375rem;
+   margin-top: 0.5rem;
+   font-size: 1rem;
+   border: none;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
 }
 
 .topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 10px;
-    background: #60b0f4;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    color: white;
+   float: right;
+   padding: 0.375rem 0.625rem;
+   margin-top: 0.5rem;
+   margin-right: 0.625rem;
+   background: #60b0f4;
+   font-size: 1rem;
+   border: none;
+   cursor: pointer;
+   color: white;
 }
 
 .topnav .search-container button:hover {
-    opacity: 0.8;
+   opacity: 0.8;
 }
 
 .mainnav a {
-    text-decoration: none;
-    color: aliceblue
-}
-
-.mainnav a:hover {
-    color: #60b0f4;
+   text-decoration: none;
+   color: aliceblue
 }
 
 #main_pm {
-    margin-top: 7%;
-    margin-left: 0;
-    font-family: 'Play', sans-serif;
-    font-size: 3vw;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    padding: 3%;
-    width: 60%;
-
+   font-family: 'Play', sans-serif;
+   font-size: 3.8vw;
+   background: rgba(0, 0, 0, 0.5);
+   color: #f1f1f1;
+   margin-top: 150px;
+   padding: 3%;
+   width: 66%;
+   text-shadow: none;
 }
-.home{
-    color:aliceblue;
+
+.home {
+   color: aliceblue;
 }
 
 h1 {
-    margin-left: 20px;
-    color:deeppink;
-    text-shadow: -6px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   color: deeppink;
 }
 
 h2 {
-    margin-left: 40px;
-
+   margin-left: 2.5rem;
 }
 
-p {
-    margin-left: 40px;
+.section-title {
+   text-align: center;
+   font-size: 3rem;
+}
+
+.col-container {
+   display: table;
+   width: 100%;
+   padding: 20px;
+}
+
+.col {
+   display: table-cell;
+   padding: 16px;
+}
+
+.responsive {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: auto;
+   margin-left: 115px;
+   width: 183px;
+   height: 290px;
+}
+
+#books_three_intro,
+#books_two_intro,
+#books_one_intro {
+   font-family: font-family 'Helvetica', sans-serif;
+   font-weight: 200;
+   line-height: 25px;
+   position: absolute;
+   color: #fff;
+   background: rgba(0, 0, 0, 0.5);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 5px;
+   padding: 20px;
+   border: none;
+   width: 30%;
+  
+}
+
+#books_three_intro,
+#books_two_intro,
+#books_one_intro {
+   display: none;
+}
+
+
+
+.button {
+   display: inline-block;
+   font-family: font-family 'Helvetica', sans-serif;
+   padding: 6px 10px;
+   color: deeppink;
+   font-weight: 700;
+   border: 2px solid #60b0f4;
+   line-height: normal;
+   margin-top: 20px;
+   margin-left: 9rem;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: all 0.5s;
+}
+
+.button:hover {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 10px;
+}
+
+.button:focus {
+   outline: none;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    padding: 1%;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: 1vw;
+   position: absolute;
+   bottom: 0;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 2px;
+   text-align: center;
+   background: rgba(0, 0, 0, 0.5);
 }
-
 
 @media screen and (max-width: 600px) {
-    .topnav .search-container {
-        float: none;
-    }
-    html {
-        height: 100%;
-    }
-
-    body {
-        height: 1000px
-    }
-    .topnav a,
-    .topnav input[type=text],
-    .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-
-    }
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
-
-    .home {
-        font-size: 22vm;
-    }
-
-    .background {
-        background-image: url(/images/wooden-boards-texture-background.jpg);
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    footer {
-        padding: 3%;
-        margin-top: 35%;
-        background: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        color: white;
-        text-align: center;
-        font-size: 2vw;
-    }
+   .topnav .search-container {
+       float: none;
+   }
+   html {
+       height: 100vh;
+   }
+   body {
+       height: 100vw;
+   }
+   .topnav a,
+   .topnav input[type=text],
+   .topnav .search-container button {
+       float: none;
+       display: block;
+       text-align: left;
+       width: 100%;
+       margin: 0;
+       padding: 0.875rem;
+   }
+   .topnav input[type=text] {
+       border: 1px solid #ccc;
+   }
+   .home {
+       font-size: 22vm;
+   }
 }
+
+.question p:first-child {
+   font-weight: bold;
+   color: aliceblue;
+}
+
+/* Each possible answer */
+
+.ans {
+   margin-left: 100px;
+   margin-bottom: 30px;
+   color: aliceblue;
+}
+
+/* Correct answer */
+
+.right {
+   margin-bottom: 30px;
+   margin-right: 30px;
+   text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   display: block;
+   width: 400px;
+   border: solid 1px green;
+   padding: 10px;
+   padding-left: 60px;
+}
+
+/* Incorrect answer */
+
+.wrong {
+   margin-bottom: 30px;
+   margin-right: 30px;
+   text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   display: block;
+   width: 400px;
+   border: solid 1px red;
+   padding: 10px;
+   padding-left: 60px;
+}
+
+/* Answer feedback */
+
+span {
+   display: none;
+   margin-left: 20px;
+   padding-top: 0.5em;
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+   body {
+       background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+       background: no-repeat;
+   }
+   .col {
+       display: block;
+   }
+
+   #main_pm {
+       font-size: 2rem;
+       width: 100%;
+       margin-top: 3rem;
+
+   }
+
+   #books_three_intro,
+   #books_two_intro,
+   #books_one_intro {
+       position: relative;
+       width: 100%;
+   }
+   .button {
+       margin-left: 3.8rem;
+   }
+   .responsive {
+       margin-left: 20%;
+       width: 153px;
+       height: 260px;
+   }
+   .section-title {
+       font-size: 2rem;
+   }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+   body {
+       background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+       background: no-repeat;
+   }
+   .button {
+       margin-left: 5.7rem;
+   }
+   .responsive {
+       margin-left: 27%;
+   }
+}
+
+/* ----------- iPhone 6+, 7+, 8+ and X ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+   body {
+       background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+       background: no-repeat;
+   }
+   .button {
+       margin-left: 6.5rem;
+   }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+   body {
+       background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+       background: no-repeat;
+   }
+   .button {
+       margin-left: 3.3rem;
+   }
+   .responsive {
+       margin-left: 23%;
+       width: 133px;
+       height: 240px;
+   }
+   .section-title {
+       font-size: 2rem;
+   }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+   body {
+       background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+       background: no-repeat;
+   }
+   .button {
+       margin-left: 4.6rem;
+   }
+   .responsive {
+       margin-left: 25%;
+   }
+}
+
+
+

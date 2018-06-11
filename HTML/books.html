@@ -2,57 +2,120 @@
 <html lang="en-us">
 
 <head>
-    <!--the code in this element will not be displayed but the information for the web is needed here-->
-    <meta charset="utf-8">
-    <title>Book One | projectmanagement380.github.io</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/main.css">
+   <!--the code in this element will not be displayed but the information for the web is needed here-->
+   <meta charset="utf-8">
+   <title>Book One | projectmanagement380.github.io</title>
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+   <link rel="stylesheet" href="/CSS/main.css">
+
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div class="background">
-    <header class="main-header">
-        <div>
-            <a href="/index.html" class="main-header">
-                <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
-            </a>
-        </div>
+   <div class="background">
+       <header class="main-header">
+           <div>
+               <a href="/index.html" class="main-header">
+                   <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
+               </a>
+           </div>
 
-        <!--Navigation Menue -->
+           <!--Navigation Menu -->
 
-        <div class="topnav">
-            <a href="/index.html"><i class=" fa fa-home "></i></a>
-            <a href="/HTML/books.html">Books</a>
-            <a href="/HTML/data.html">Data</a>
-            <a href="/HTML/aboutus.html">About us</a>
-            <div class="search-container">
-                <form action="http://www.google.com">
-                    <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <h1>Links to Books</h1>
-        <div class="mainnav">
-        <a href="/HTML/book1.html"><h2>Book One</h2></a>
-        <a href="/HTML/book2.html"><h2>Book Two</h2></a>
-        <a href="/HTML/book3.html"><h2>Book Three</h2></a>
-        </div>
-    </main>
+           <div class="topnav">
+               <a href="/index.html">
+                   <i class=" fa fa-home "></i>
+               </a>
+               <a href="/HTML/books.html">Books</a>
+               <a href="/HTML/data.html">Data</a>
+               <a href="/HTML/aboutus.html">About us</a>
+               <div class="search-container">
+                   <form action="http://www.google.com">
+                       <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
+                       <button type="submit">
+                           <i class="fa fa-search"></i>
+                       </button>
+                   </form>
+               </div>
+           </div>
+       </header>
 
 
-    <footer>
-        <!--    provides info about sight-->
-        <small class="main-footer"> &copy;2018 CIT 380 </small>
-    </footer>
-     <script src="JS/main.js"></script>
-    </div>
+       <div class="wrapper">
+           <h1 class="section-title">Books</h1>
+           <div class="col-container">
+               <div class="col">
+                   <img src="../images/3rd-alternative.jpg" class="responsive" alt="3rd Alternative">
+                   <p class="button" onclick="bookOneIntro()">Description</p>
+
+                   <p id="books_one_intro">From the multimillion-copy bestselling author of The 7 Habits of Highly Effective People—hailed as the
+                       #1 Most Influential Business Book of the Twentieth Century—The 3rd Alternative turns Dr. Stephen
+                       R. Covey’s formidable insight to a powerful new way to resolve professional and personal difficulties
+                       and create solutions to great challenges in organizations and society.
+                       <br>
+
+                       <br>There are many methods of “conflict resolution,” but most involve compromise, a low-level accommodation
+                       that stops the fight without breaking through to amazing new results. The 3rd Alternative introduces
+                       a breakthrough approach to conflict resolution and creative problem solving, transcending traditional
+                       solutions to conflict by forging a path toward a third option, a 3rd Alternative that moves beyond
+                       your way or my way to a higher and better way—one that allows both parties to emerge from debate
+                       or even heated conflict in a far better place than either had envisioned. With the 3rd Alternative,
+                       nobody has to give up anything, and everyone wins.
+                   </p>
+               </div>
+               <div class="col">
+                   <img src="../images/management-rewired.jpeg" class="responsive" alt="Management Rewired">
+                   <p class="button" id="more-content" onclick="bookTwoIntro()">Description</p>
+
+                   <p id="books_two_intro">Why is it so hard for managers to get the results they want? According to the latest brain science, it's
+                       because most of what they do produces the opposite of what they expect. Appeals to reason fall short,
+                       for our decisions are made emotionally, and logic is at best an after-the-fact justification for
+                       what we've already determined to do.
+                       <br>
+
+                       <br>That's just one of the many amazing discoveries that explain why management is so challenging. but
+                       as Charles Jacobs explains, once we understand the lessons of neuroscience, we're able to create
+                       more powerful strategies, inspire people to maximize their potential, and overcome the biggest hurdle
+                       to improving business performance-making change stick.
+                   </p>
+               </div>
+
+               <div class="col">
+                   <img src="../images/making-thigs-happen2.jpg" class="responsive" alt="3rd Alternative">
+                   <p class="button" id="more-content" onclick="bookThreeIntro()">Description</p>
+
+                   <p id="books_three_intro">In the updated edition of this critically acclaimed and bestselling book, Microsoft project veteran Scott
+                       Berkun offers a collection of essays on field-tested philosophies and strategies for defining, leading,
+                       and managing projects. Each essay distills complex concepts and challenges into practical nuggets
+                       of useful advice, and the new edition now adds more value for leaders and managers of projects everywhere.
+                       Based on his nine years of experience as a program manager for Internet Explorer and lead program
+                       manager for Windows and MSN, Berkun explains to technical and non-technical readers alike what it
+                       takes to get through a large software or web development project. Making Things Happen doesn't cite
+                       specific methods, but focuses on philosophy and strategy. Unlike other project management books,
+                       Berkun offers personal essays in a comfortable style and easy tone that emulate the relationship
+                       of a wise project manager who gives good, entertaining and passionate advice to those who ask.
+                   </p>
+               </div>
+           </div>
+       </div>
+       <div class="wrapper">
+           <footer>
+               <!--    provides info about sight-->
+               <small class="main-footer"> &copy;2018 CIT 380
+                   <p>Background photo by rawpixel on
+                       <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                   </p>
+               </small>
+           </footer>
+       </div>
+       <script src="../JS/main.js"></script>
+   </div>
 </body>
 
 </html>
+
+
+

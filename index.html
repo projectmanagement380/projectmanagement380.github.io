@@ -17,19 +17,25 @@
 
         <header class="main-header">
             <div>
-                <a href="index.html" class="main-header">
-                <img src="./images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
-            </a>
+                <a href="/index.html" class="main-header">
+                    <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" alt="Logo" class="main-header_logo">
+                </a>
             </div>
 
+            <!--Navigation Menue -->
+
             <div class="topnav">
-                <a href="/index.html"><i class=" fa fa-home "></i></a>
+                <a href="/index.html">
+                    <i class=" fa fa-home "></i>
+                </a>
+
                 <a href="/HTML/books.html">Books</a>
                 <a href="/HTML/data.html">Data</a>
                 <a href="/HTML/aboutus.html">About us</a>
                 <div class="search-container">
                     <form action="http://www.google.com">
                         <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
+
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -38,11 +44,18 @@
         <main>
             <h1 id="main_pm">Welcome to Project Management</h1>
         </main>
-
-        <footer>
-            <!--    provides info about sight-->
-            <small class="main-footer"> &copy;2018 CIT 380 </small>
-        </footer>
+        <div class="wrapper">
+            <footer>
+                <!--    provides info about sight-->
+                <small class="main-footer"> &copy;2018 CIT 380
+                        <p>Background photo by rawpixel on
+                            <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                        </p>
+                    </small>
+            </footer>
+        </div>
         <script src="JS/main.js"></script>
     </div>
 </body>
+    
+</html>
