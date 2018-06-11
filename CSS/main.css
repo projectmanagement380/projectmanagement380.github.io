@@ -243,6 +243,14 @@ footer {
     .col {
         display: block;
     }
+
+    #main_pm {
+        font-size: 2rem;
+        width: 100%;
+        margin-top: 3rem;
+
+    }
+
     #books_three_intro,
     #books_two_intro,
     #books_one_intro {
