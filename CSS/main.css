@@ -391,6 +391,8 @@ body {
         body {
             background-image: url(/images/white-background-mobile.jpg);
             background-position: bottom 100%;
+            background: no-repeat;
+
 
         }
         .col {
@@ -411,7 +413,7 @@ body {
             margin-left: 3.8rem;
         }
         .responsive_img {
-            margin-left: 20%;
+            margin-left: 40px;
             width: 183px;
             height: 290px;
         }
@@ -420,6 +422,10 @@ body {
         }
         .main-header_logo {
             margin-left: 10px;
+        }
+
+        .col-container {
+            margin-top: 5px;
         }
     }
     /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
