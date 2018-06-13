@@ -21,10 +21,11 @@ function toggleIntroThree() {
 }
 
 function dropDownMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var dropDawn = document.getElementById("myTopnav");
+    if (dropDawn.className === "topnav") {
+        dropDawn.className += " responsive";
     } else {
-        x.className = "topnav";
+        dropDawn.className = "topnav";
     }
 }
+
