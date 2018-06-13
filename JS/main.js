@@ -1,4 +1,3 @@
-
 let nav = document.getElementById('navigation');
 
 function toggleMenu() {
@@ -6,32 +5,26 @@ function toggleMenu() {
 }
 
 //description buttons
-function bookOneIntro() {
-    var x = document.getElementById("books_one_intro");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function toggleIntroOne() {
+    const bookOne = document.getElementById("book_one_intro");
+    bookOne.classList.toggle("open");
 }
 
-function bookTwoIntro() {
-    var x = document.getElementById("books_two_intro");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function toggleIntroTwo() {
+    const bookTwo = document.getElementById("book_two_intro");
+    bookTwo.classList.toggle("open");
 }
 
-function bookThreeIntro() {
-    var x = document.getElementById("books_three_intro");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function toggleIntroThree() {
+    const bookTree = document.getElementById("book_three_intro");
+    bookTree.classList.toggle("open");
 }
 
-
-
+function dropDownMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

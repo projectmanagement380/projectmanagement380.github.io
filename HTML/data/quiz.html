@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <!--the code in this element will not be displayed but the information for the web is needed here-->
+    <meta charset="utf-8">
+    <title>Book One | projectmanagement380.github.io</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p.ans").click(function () {
+                //Get the id of the div
+                var qnum = "#" + $(this).parent().attr("id");
+                //Clear previous freeback:
+                $(qnum + " p.ans").removeClass("right wrong");
+                $(qnum + " p span").css("display", "none");
+                //Apply right or wrong class to p and span.
+                var applyclass = "wrong"
+                var spancolor = "red"
+                if ($(this).hasClass("correct")) {
+                    applyclass = "right";
+                    spancolor = "green"
+                }
+                $(this).addClass(applyclass);
+                $(this).children(":first").css("display", "block").css("color", spancolor);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="background">
+        <header class="main-header">
+            <div>
+                <a href="../../index.html" class="main-header">
+                    <img src="../../images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
+                </a>
+            </div>
+
+            <!--Navigation Menue -->
+
+            <div class="topnav" id="myTopnav">
+                <a href="/index.html" class="active">
+                    <i class=" fa fa-home"></i>
+                </a>
+                <a href="/HTML/books.html">Books</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Data
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">videos</a>
+                        <a href="/HTML/data/quiz.html">Quiz</a>
+                        <a href="#">Methods</a>
+                        <a href="#">Project Management</a>
+                    </div>
+                </div>
+                <a href="/HTML/aboutus.html">About us</a>
+                <div class="search-container">
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
+                    <form action="http://www.google.com">
+                        <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h1>Quiz</h1>
+            <div id="wrapper">
+                <div class="question" id="q1">
+                    <p>1. Planning is not necessary on small projects?</p>
+                    <p class="ans">a) True
+                        <span>That's Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+                <div class="question" id="q2">
+                    <p>2. Projects are initiated by whomever is in charge?</p>
+                    <p class="ans ">a) True
+                        <span>That's Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+                <div class="question" id="q3">
+                    <p>3. Anyone can be a project manager?</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>That's Incorrect</span>
+                    </p>
+                </div>
+                <div class="question" id="q4">
+                    <p>4. The project manager is responsible for carrying out the project?</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>That's Incorrect</span>
+                    </p>
+                </div>
+                <div class="question" id="q5">
+                    <p>5. Quality is not important in projects?</p>
+                    <p class="ans">a) True
+                        <span>That's Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+                <div class="question" id="q6">
+                    <p>6. The project team needs to spend time clearly defining the project before getting underway?</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>That's Incorrect</span>
+                    </p>
+                </div>
+                <div class="question" id="q7">
+                    <p>7. Negotiating for materials, supplies, and services is not a part of a project manager’s duties?</p>
+                    <p class="ans">a) True
+                        <span>That's Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+                <div class="question" id="q8">
+                    <p>8. Audits are done only at the end of projects to see whether the project is over budget.</p>
+                    <p class="ans">a) True
+                        <span>That's Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+                <div class="question" id="q9">
+                    <p>9. Giving in is never an acceptable strategy for resolving differences.</p>
+                    <p class="ans">a) True
+                        <span>That's Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+                <div class="question" id="q10">
+                    <p>10. Testing provides important information on the quality dimension of a project.</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>That's Incorrect</span>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <!--    provides info about sight-->
+            <small class="main-footer"> &copy;2018 CIT 380 </small>
+        </footer>
+    </div>
+</body>
+
+</html>

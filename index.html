@@ -9,11 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Wire+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Wire+One" rel="stylesheet">
+    
     <link rel="stylesheet" href="/CSS/main.css">
 </head>
 
 <body>
-    <div class="background">
         <header class="main-header">
             <div>
                 <a href="/index.html" class="main-header">
@@ -23,14 +25,26 @@
 
             <!--Navigation Menue -->
 
-            <div class="topnav">
-                <a href="/index.html">
-                    <i class=" fa fa-home "></i>
+            <div class="topnav" id="myTopnav">
+                <a href="/index.html" class="active">
+                    <i class=" fa fa-home"></i>
                 </a>
                 <a href="/HTML/books.html">Books</a>
-                <a href="/HTML/data.html">Data</a>
+                <div class="dropdown">
+                <button class="dropbtn">Data
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">videos</a>
+                    <a href="HTML/data/quiz.html">Quiz</a>
+                    <a href="#">Methods</a>
+                    <a href="#">Project Management</a>
+                  </div>                
+                </div>
                 <a href="/HTML/aboutus.html">About us</a>
                 <div class="search-container">
+                        <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
+
                     <form action="http://www.google.com">
                         <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
                         <button type="submit">
@@ -40,9 +54,11 @@
                 </div>
             </div>
         </header>
-        <main>
+    
+        <wrapper class="modal">
             <h1 id="main_pm">Welcome to Project Management</h1>
-
+           
+        </wrapper>
             <div class="wrapper">
                 <footer>
                     <!--    provides info about sight-->
@@ -55,7 +71,6 @@
                 </footer>
             </div>
             <script src="JS/main.js"></script>
-    </div>
 </body>
 
 
