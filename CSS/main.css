@@ -549,6 +549,12 @@ section.container:hover {
     .main-footer {
         margin-top: 75rem;
     }
+
+    .topnav .search-container button {
+        margin-right: 0.5rem;
+    }
+
+    
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
