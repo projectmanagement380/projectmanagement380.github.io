@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/CSS/main.css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 </head>
 
 <body>
@@ -31,7 +33,7 @@
                     </a>
                     <a href="/HTML/books.html">Books</a>
                     <div class="dropdown">
-                    <button class="dropbtn">Data
+                    <button class="dropbtn">Resources
                     <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -58,7 +60,7 @@
         <div class="wrapper">
             <div class="col-container">
                 <div class="col">
-                    <img src="../images/3rd-alternative.jpg" class="responsive_img" alt="3rd Alternative">
+                    <img src="../images/3rd-alternative.jpg" id="book1" class="responsive_img" alt="3rd Alternative">
                     <p class="button" onclick="toggleIntroOne()">Description</p>
 
                     <p id="book_one_intro">From the multimillion-copy bestselling author of The 7 Habits of Highly Effective People—hailed as the
@@ -77,7 +79,7 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img src="../images/management-rewired.jpeg" class="responsive_img" alt="Management Rewired">
+                    <img src="../images/management-rewired.jpeg" id="book2" class="responsive_img" alt="Management Rewired">
                     <p class="button" onclick="toggleIntroTwo()">Description</p>
 
                     <p id="book_two_intro">Why is it so hard for managers to get the results they want? According to the latest brain science, it's
@@ -94,7 +96,7 @@
                 </div>
 
                 <div class="col">
-                    <img src="../images/making-thigs-happen2.jpg" class="responsive_img" alt="3rd Alternative">
+                    <img src="../images/making-thigs-happen2.jpg" id="book3" class="responsive_img" alt="3rd Alternative">
                     <p class="button" onclick="toggleIntroThree()">Description</p>
 
                     <p id="book_three_intro">In the updated edition of this critically acclaimed and bestselling book, Microsoft project veteran Scott
@@ -122,6 +124,7 @@
             </footer>
        
         <script src="../JS/main.js"></script>
+        <script src="../../JS/reveal.js"></script>
     </div>
 </body>
 

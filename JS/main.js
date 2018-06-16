@@ -20,6 +20,7 @@ function toggleIntroThree() {
     bookTree.classList.toggle("open");
 }
 
+// ****** Drop Down Menu ******
 function dropDownMenu() {
     var dropDawn = document.getElementById("myTopnav");
     if (dropDawn.className === "topnav") {
@@ -28,4 +29,5 @@ function dropDownMenu() {
         dropDawn.className = "topnav";
     }
 }
+
 

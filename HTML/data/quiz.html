@@ -8,11 +8,16 @@
     <title>Book One | projectmanagement380.github.io</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,500i,700" rel="stylesheet">
+
     <link rel="stylesheet" href="../../CSS/main.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $("p.ans").click(function () {
@@ -33,6 +38,7 @@
             })
         });
     </script>
+
 </head>
 
 <body>
@@ -52,7 +58,7 @@
                 </a>
                 <a href="/HTML/books.html">Books</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Data
+                    <button class="dropbtn">Resources
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -76,110 +82,133 @@
         </header>
 
         <main>
-            <h1>Quiz</h1>
             <div id="wrapper">
-                <div class="question" id="q1">
-                    <p>1. Planning is not necessary on small projects?</p>
-                    <p class="ans">a) True
-                        <span>That's Incorrect</span>
-                    </p>
-                    <p class="ans correct">b) False
-                        <span>Correct</span>
-                    </p>
-                </div>
-                <div class="question" id="q2">
-                    <p>2. Projects are initiated by whomever is in charge?</p>
-                    <p class="ans ">a) True
-                        <span>That's Incorrect</span>
-                    </p>
-                    <p class="ans correct">b) False
-                        <span>Correct</span>
-                    </p>
-                </div>
-                <div class="question" id="q3">
-                    <p>3. Anyone can be a project manager?</p>
-                    <p class="ans correct">a) True
-                        <span>Correct</span>
-                    </p>
-                    <p class="ans">b) False
-                        <span>That's Incorrect</span>
-                    </p>
-                </div>
-                <div class="question" id="q4">
-                    <p>4. The project manager is responsible for carrying out the project?</p>
-                    <p class="ans correct">a) True
-                        <span>Correct</span>
-                    </p>
-                    <p class="ans">b) False
-                        <span>That's Incorrect</span>
-                    </p>
-                </div>
-                <div class="question" id="q5">
-                    <p>5. Quality is not important in projects?</p>
-                    <p class="ans">a) True
-                        <span>That's Incorrect</span>
-                    </p>
-                    <p class="ans correct">b) False
-                        <span>Correct</span>
-                    </p>
-                </div>
+                <section id="q1" class="container">
+                    <div class="question" id="q1">
+                        <p>1. Planning is not necessary on small projects?</p>
+                        <p class="ans">a) True
+                            <span>Incorrect</span>
+                        </p>
+                        <p class="ans correct">b) False
+                            <span>Correct</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q2" class="container">
+                    <div class="question" id="q2">
+                        <p>2. Projects are initiated by whomever is in charge?</p>
+                        <p class="ans ">a) True
+                            <span>Incorrect</span>
+                        </p>
+                        <p class="ans correct">b) False
+                            <span>Correct</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q3" class="container">
+                    <div class="question" id="q3">
+                        <p>3. Anyone can be a project manager?</p>
+                        <p class="ans correct">a) True
+                            <span>Correct</span>
+                        </p>
+                        <p class="ans">b) False
+                            <span>Incorrect</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q4" class="container">
+                    <div class="question" id="q4">
+                        <p>4. The project manager is responsible for carrying out the project?</p>
+                        <p class="ans correct">a) True
+                            <span>Correct</span>
+                        </p>
+                        <p class="ans">b) False
+                            <span>Incorrect</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q5" class="container">
+                    <div class="question" id="q5">
+                        <p>5. Quality is not important in projects?</p>
+                        <p class="ans">a) True
+                            <span>Incorrect</span>
+                        </p>
+                        <p class="ans correct">b) False
+                            <span>Correct</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q6" class="container">
                 <div class="question" id="q6">
                     <p>6. The project team needs to spend time clearly defining the project before getting underway?</p>
                     <p class="ans correct">a) True
                         <span>Correct</span>
                     </p>
                     <p class="ans">b) False
-                        <span>That's Incorrect</span>
+                        <span>Incorrect</span>
                     </p>
                 </div>
+            </section>
+            <section id="q7" class="container">
                 <div class="question" id="q7">
                     <p>7. Negotiating for materials, supplies, and services is not a part of a project manager’s duties?</p>
                     <p class="ans">a) True
-                        <span>That's Incorrect</span>
+                        <span>Incorrect</span>
                     </p>
                     <p class="ans correct">b) False
                         <span>Correct</span>
                     </p>
                 </div>
+            </section>
+            <section id="q8" class="container">
                 <div class="question" id="q8">
                     <p>8. Audits are done only at the end of projects to see whether the project is over budget.</p>
                     <p class="ans">a) True
-                        <span>That's Incorrect</span>
+                        <span>Incorrect</span>
                     </p>
                     <p class="ans correct">b) False
                         <span>Correct</span>
                     </p>
                 </div>
+            </section>
+            <section id="q9" class="container">
                 <div class="question" id="q9">
                     <p>9. Giving in is never an acceptable strategy for resolving differences.</p>
                     <p class="ans">a) True
-                        <span>That's Incorrect</span>
+                        <span>Incorrect</span>
                     </p>
                     <p class="ans correct">b) False
                         <span>Correct</span>
                     </p>
                 </div>
+            </section>
+            <section id="q10" class="container">
                 <div class="question" id="q10">
                     <p>10. Testing provides important information on the quality dimension of a project.</p>
                     <p class="ans correct">a) True
                         <span>Correct</span>
                     </p>
                     <p class="ans">b) False
-                        <span>That's Incorrect</span>
+                        <span>Incorrect</span>
                     </p>
                 </div>
             </div>
+        </section>
         </main>
-                <footer class="main-footer">
-                    <!--    provides info about sight-->
-                    <small> &copy;2018 CIT 380
-                        <p>Background photo by rawpixel on
-                            <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
-                        </p>
-                    </small>
-                </footer>
-            
-    </div>
+
+
+        <footer class="main-footer">
+            <!--    provides info about sight-->
+            <small> &copy;2018 CIT 380
+                <p>Background photo by rawpixel on
+                    <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                </p>
+            </small>
+        </footer>
+        </div>
+        <script src="../../JS/reveal.js"></script>
+        <script src="../../JS/main.js"></script>
+
 </body>
 
 </html>
