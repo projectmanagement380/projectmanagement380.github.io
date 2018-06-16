@@ -423,7 +423,7 @@ section.container:hover {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        background-image: url(/images/white-background-mobile.jpg);
+        /* background-image: url(/images/white-background-mobile.jpg); */
         background-position: bottom 20%;
         background: no-repeat;
     }
@@ -488,7 +488,7 @@ section.container:hover {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
         background: no-repeat;
     }
     .button {
@@ -512,7 +512,7 @@ section.container:hover {
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     body {
-        background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
         background: no-repeat;
     }
     .responsive_img {
@@ -532,7 +532,7 @@ section.container:hover {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
         background: no-repeat;
     }
     .button {
@@ -557,7 +557,7 @@ section.container:hover {
 
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        background-image: url(/images/rawpixel__unsplash_mobile.jpg);
+        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
         background: no-repeat;
     }
     .button {
