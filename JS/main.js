@@ -29,5 +29,3 @@ function dropDownMenu() {
         dropDawn.className = "topnav";
     }
 }
-
-

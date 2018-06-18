@@ -107,7 +107,7 @@ sr.reveal('#book3', {
 
 sr.reveal('#main_pm', {
     duration: 2000,
-    origin: 'left',
+    origin: 'bottom',
     distance: '-100px',
     viewFactor: 0.1,
     reset: true
