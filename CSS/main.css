@@ -94,7 +94,7 @@ body {
     padding: 0.375rem 0.625rem;
     margin-top: 0.5rem;
     margin-right: 2rem;
-    background: #60b0f4;
+    background: #008CBA;
     font-size: 1rem;
     border: none;
     cursor: pointer;
@@ -450,8 +450,8 @@ section.container:hover {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
         /* background-image: url(/images/white-background-mobile.jpg); */
-        background-position: bottom 20%;
-        background: no-repeat;
+        /* background-position: bottom 20%;
+        background: no-repeat; */
     }
     .col {
         display: block;
