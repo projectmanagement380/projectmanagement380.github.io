@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/aboutus.css">
+
 
 </head>
 
@@ -18,65 +20,126 @@
         <header class="main-header">
             <div>
                 <a href="/index.html" class="main-header">
-                <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
-            </a>
+                    <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
+                </a>
             </div>
 
             <!--Navigation Menue -->
 
             <div class="topnav" id="myTopnav">
-                    <a href="/index.html" class="active">
-                        <i class=" fa fa-home"></i>
-                    </a>
-                    <a href="/HTML/books.html">Books</a>
-                    <div class="dropdown">
+                <a href="/index.html" class="active">
+                    <i class=" fa fa-home"></i>
+                </a>
+                <a href="/HTML/books.html">Books</a>
+                <div class="dropdown">
                     <button class="dropbtn">Resorces
-                    <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                         <a href="#">Videos</a>
                         <a href="../HTML/data/quiz.html">Quiz</a>
                         <a href="#">Methods</a>
                         <a href="#">Project Management</a>
-                      </div>                
-                    </div>
-                    <a href="/HTML/aboutus.html">About us</a>
-                    <div class="search-container">
-                            <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
-    
-                        <form action="http://www.google.com">
-                            <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
-                            <button type="submit">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </form>
                     </div>
                 </div>
+                <a href="/HTML/aboutus.html">About us</a>
+                <div class="search-container">
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
+
+                    <form action="http://www.google.com">
+                        <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </header>
 
         <main>
-            <h1>About Us</h1>
-            <section class=home>
-                <h2>Jim Greene</h2>
-                <p>About me</p>
-                <h2>Sunny Zhou</h2>
-                <p>About me</p>
-                <h2>Jaime Rosales</h2>
-                <p>About me</p>
-                <h2>Blake Jennings</h2>
-                <p>About me</p>
-                <h2>Kristy Prince</h2>
-                <p>About me</p>
-            </section>
+            <div class="flex-container">
+                <div class="container item-1">
+                    <img src="../images/jaime.jpg" alt="Jaime Rosales" class="image">
+                    <div class="overlay">
+                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
+                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
+                            began to be passionate about web programming, e.g. developing apps and building websites.
+                            <br>
+                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
+                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
+                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
+                            in life such going on walks, see the sunsets and admire the creation.</p>
+                    </div>
+                    <div class="overlay-name">Jaime Rosale</div>
+                </div>
+                <div class="container item-2">
+                    <img src="../images/jaime.jpg" alt="Jim Greene" class="image">
+                    <div class="overlay">
+                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
+                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
+                            began to be passionate about web programming, e.g. developing apps and building websites.
+                            <br>
+                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
+                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
+                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
+                            in life such going on walks, see the sunsets and admire the creation.</p>
+                    </div>
+                    <div class="overlay-name">Jim Greene</div>
+                </div>
+                <div class="container item-3">
+                    <img src="../images/jaime.jpg" alt="Kristy Prince" class="image">
+                    <div class="overlay">
+                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
+                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
+                            began to be passionate about web programming, e.g. developing apps and building websites.
+                            <br>
+                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
+                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
+                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
+                            in life such going on walks, see the sunsets and admire the creation.</p>
+                    </div>
+                    <div class="overlay-name">Kristy Prince</div>
+                </div>
+                <div class="container item-4">
+                    <img src="../images/jaime.jpg" alt="Sunny Zhou" class="image">
+                    <div class="overlay">
+                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
+                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
+                            began to be passionate about web programming, e.g. developing apps and building websites.
+                            <br>
+                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
+                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
+                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
+                            in life such going on walks, see the sunsets and admire the creation.</p>
+                    </div>
+                    <div class="overlay-name">Sunny Zhou</div>
+                </div>
+                <div class="container item-5">
+                    <img src="../images/jaime.jpg" alt="Blake Jennings" class="image">
+                    <div class="overlay">
+                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
+                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
+                            began to be passionate about web programming, e.g. developing apps and building websites.
+                            <br>
+                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
+                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
+                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
+                            in life such going on walks, see the sunsets and admire the creation.</p>
+                    </div>
+                    <div class="overlay-name">Blake Jennings</div>
+                </div>
+            </div>
+
         </main>
-                <footer class="main-footer">
-                    <!--    provides info about sight-->
-                    <small > &copy;2018 CIT 380
-                        <p>Background photo by rawpixel on
-                            <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
-                        </p>
-                    </small>
-                </footer>
+
+        <footer class="main-footer">
+            <!--    provides info about sight-->
+            <small> &copy;2018 CIT 380
+                <p>Background photo by rawpixel on
+                    <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                </p>
+            </small>
+        </footer>
     </div>
     <script src="../JS/main.js"></script>
 </body>

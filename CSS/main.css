@@ -234,6 +234,7 @@ body {
         text-align: center;
         font-size: 3rem;
     }
+    
 }
 
 .col-container {
@@ -314,7 +315,7 @@ body {
 
 small a {
     text-decoration: none;
-    color: deeppink;
+    color: #ff1493;
     font-weight: bold;
 }
 
@@ -337,16 +338,18 @@ small a:hover {
         border: 1px solid #ccc;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        padding: 10px;
     }
     .topnav .search-container button {
         float: right;
         margin-right: 0;
         width: 10%;
         text-align: center;
-        padding: 7px 0;
+        padding: 10px;
     }
     .dropdown-content a {
         padding: 6px 10px;
+        
     }
 }
 
@@ -377,7 +380,7 @@ small a:hover {
     margin-right: 30px;
     display: block;
     width: 300px;
-    border: solid 1px green;
+    border: solid 1px lightgreen;
     border-radius: 10px;
     padding: 10px;
     padding-left: 60px;
@@ -390,7 +393,7 @@ small a:hover {
     margin-right: 30px;
     display: block;
     width: 300px;
-    border: solid 1px red;
+    border: solid 1px rgb(241, 43, 8);
     border-radius: 10px;
     padding: 10px;
     padding-left: 60px;
@@ -417,6 +420,27 @@ section.container {
 
 section.container:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Scroll up button */
+#scroll {
+    position: fixed;
+    right: 2px;
+    bottom: 100px;
+    color: deeppink;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    text-indent: -1px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+
+#scroll:hover {
+   opacity: 0.7;
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -463,9 +487,7 @@ section.container:hover {
     .wrapper {
         min-height: 100vh;
     }
-    .topnav {
-        background: rgba(0, 0, 0, 0.3s);
-    }
+    
     .right {
         width: 230px;
         
@@ -579,74 +601,3 @@ section.container:hover {
     }
 }
 
-
-
-
-
-
-.share {
-    max-width: 600px;
-    height: 100px;
-    margin: 0 auto;
-    -webkit-filter: url("#goo");
-    filter: url("../share.html#goo");
-    position: relative;
-  }
-  
-  .share-button,
-  .share-toggle-button {
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    top: 50%;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    margin-left: -40px;
-    margin-top: -40px;
-    background: #ccc;
-    text-align: center;
-    color: #fff;
-    border: none;
-    outline: none;
-  }
-  
-  .share-button:hover,
-  .share-toggle-button:hover {
-    color: #fff;
-  }
-  
-  .share-button {
-    font-size: 30px;
-    background: #737070;
-    -webkit-transform: scale(0.95, 0.95);
-    transform: scale(0.95, 0.95);
-    color: #222;
-  }
-  
-  a.share-button {
-    color: #3D4444;
-  }
-  
-  a.share-button:hover, 
-  a.share-button:focus {
-    color: #dfd7d7;
-  }
-  
-  .share-toggle-button {
-    z-index: 9;
-    background: #666;
-    font-size: 20px;
-  }
-  
-  .share-items {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .share-item {
-    display: inline-block;
-  }
-  

@@ -17,6 +17,24 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 800) {
+                    $('#scroll').fadeIn();
+                } else {
+                    $('#scroll').fadeOut();
+                }
+            });
+            $('#scroll').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -31,7 +49,7 @@
                 var spancolor = "red"
                 if ($(this).hasClass("correct")) {
                     applyclass = "right";
-                    spancolor = "green"
+                    spancolor = "limegreen"
                 }
                 $(this).addClass(applyclass);
                 $(this).children(":first").css("display", "block").css("color", spancolor);
@@ -139,75 +157,77 @@
                     </div>
                 </section>
                 <section id="q6" class="container">
-                <div class="question" id="q6">
-                    <p>6. The project team needs to spend time clearly defining the project before getting underway?</p>
-                    <p class="ans correct">a) True
-                        <span>Correct</span>
-                    </p>
-                    <p class="ans">b) False
-                        <span>Incorrect</span>
-                    </p>
-                </div>
-            </section>
-            <section id="q7" class="container">
-                <div class="question" id="q7">
-                    <p>7. Negotiating for materials, supplies, and services is not a part of a project manager’s duties?</p>
-                    <p class="ans">a) True
-                        <span>Incorrect</span>
-                    </p>
-                    <p class="ans correct">b) False
-                        <span>Correct</span>
-                    </p>
-                </div>
-            </section>
-            <section id="q8" class="container">
-                <div class="question" id="q8">
-                    <p>8. Audits are done only at the end of projects to see whether the project is over budget.</p>
-                    <p class="ans">a) True
-                        <span>Incorrect</span>
-                    </p>
-                    <p class="ans correct">b) False
-                        <span>Correct</span>
-                    </p>
-                </div>
-            </section>
-            <section id="q9" class="container">
-                <div class="question" id="q9">
-                    <p>9. Giving in is never an acceptable strategy for resolving differences.</p>
-                    <p class="ans">a) True
-                        <span>Incorrect</span>
-                    </p>
-                    <p class="ans correct">b) False
-                        <span>Correct</span>
-                    </p>
-                </div>
-            </section>
-            <section id="q10" class="container">
-                <div class="question" id="q10">
-                    <p>10. Testing provides important information on the quality dimension of a project.</p>
-                    <p class="ans correct">a) True
-                        <span>Correct</span>
-                    </p>
-                    <p class="ans">b) False
-                        <span>Incorrect</span>
-                    </p>
-                </div>
+                    <div class="question" id="q6">
+                        <p>6. The project team needs to spend time clearly defining the project before getting underway?</p>
+                        <p class="ans correct">a) True
+                            <span>Correct</span>
+                        </p>
+                        <p class="ans">b) False
+                            <span>Incorrect</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q7" class="container">
+                    <div class="question" id="q7">
+                        <p>7. Negotiating for materials, supplies, and services is not a part of a project manager’s duties?</p>
+                        <p class="ans">a) True
+                            <span>Incorrect</span>
+                        </p>
+                        <p class="ans correct">b) False
+                            <span>Correct</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q8" class="container">
+                    <div class="question" id="q8">
+                        <p>8. Audits are done only at the end of projects to see whether the project is over budget.</p>
+                        <p class="ans">a) True
+                            <span>Incorrect</span>
+                        </p>
+                        <p class="ans correct">b) False
+                            <span>Correct</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q9" class="container">
+                    <div class="question" id="q9">
+                        <p>9. Giving in is never an acceptable strategy for resolving differences.</p>
+                        <p class="ans">a) True
+                            <span>Incorrect</span>
+                        </p>
+                        <p class="ans correct">b) False
+                            <span>Correct</span>
+                        </p>
+                    </div>
+                </section>
+                <section id="q10" class="container">
+                    <div class="question" id="q10">
+                        <p>10. Testing provides important information on the quality dimension of a project.</p>
+                        <p class="ans correct">a) True
+                            <span>Correct</span>
+                        </p>
+                        <p class="ans">b) False
+                            <span>Incorrect</span>
+                        </p>
+                    </div>
             </div>
-        </section>
+            </section>
         </main>
 
-
+        <a href="javascript(0);" id="scroll" title="Scroll to Top" style="display: none;">
+            <img src="../../images/up-arrow.png" width="45px" height="45px">
+            <span></span>
+        </a>
         <footer class="main-footer">
-            <!--    provides info about sight-->
             <small> &copy;2018 CIT 380
                 <p>Background photo by rawpixel on
                     <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
                 </p>
             </small>
         </footer>
-        </div>
-        <script src="../../JS/reveal.js"></script>
-        <script src="../../JS/main.js"></script>
+    </div>
+    <script src="../../JS/reveal.js"></script>
+    <script src="../../JS/main.js"></script>
 
 </body>
 
