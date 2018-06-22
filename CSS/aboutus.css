@@ -10,7 +10,7 @@
     /* justify-content: center; */
 }
 
-div.container.item-1 {
+/* div.container.item-1 {
     padding: 2rem 2rem 4rem 2rem;
       }
 
@@ -27,16 +27,15 @@ div.container.item-4 {
 }
 
 div.container.item-5 {
-    padding: 2rem 2rem 4rem 2rem;}
+    padding: 2rem 2rem 4rem 2rem;} */
 
 .image {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 50%;
 }
 
-.overlay {
+/* .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -46,12 +45,12 @@ div.container.item-5 {
     width: 0;
     height: 100%;
     transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
+  } */
+
+/* .container:hover .overlay {
     width: 100%;
 
-  }
+  } */
 
 .text {
     color: white;
@@ -66,7 +65,7 @@ div.container.item-5 {
 .overlay-name {
     position: absolute;
     bottom: 12px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background: #fff;
     color: #ff5454;
     width: 83%;
@@ -81,8 +80,10 @@ div.container.item-5 {
     opacity: 1;
 }
 
+
 @media (min-width: 40rem) {
     .container {
+        position: relative;
         width: 25%;
     }
     .flex-container {
@@ -91,52 +92,53 @@ div.container.item-5 {
         align-content: space-around;
         /* justify-content: center; */
     }
-
     div.container.item-1 {
-        margin-left: 2rem;
-
-          }
-
+        padding: 2rem 2rem 4rem 2rem;
+    }
     div.container.item-2 {
-        margin-left: 8rem;
-      }
-
-      div.container.item-3 {
-         margin-left: 7.5rem;
+        padding: 2rem 2rem 4rem 2rem;
     }
-
+    div.container.item-3 {
+        padding: 2rem 2rem 4rem 2rem;
+    }
     div.container.item-4 {
-        margin: 28rem 0 0 2rem;
-    
+        padding: 2rem 2rem 4rem 2rem;
     }
-
     div.container.item-5 {
-        margin: 28rem 0 0 8rem;
-       
+        padding: 2rem 2rem 4rem 2rem;
     }
-
     .overlay {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-
-
-      }
-      
+        position: absolute;
+        top: 6.5%;
+        left: 2rem;
+        right: 0;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        /* background-color: #008CBA; */
+        overflow: hidden;
+        width: 80%;
+        height: 0;
+        transition: .5s ease;
+    }
+    .container:hover .overlay {
+        bottom: 0;
+        height: 80%;
+    }
     .image {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
-    /*  */
-
     .overlay-name {
         position: absolute;
-        bottom: 0;
+        bottom: 3px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         color: #ff5454;
-        width: 100%;
+        width: 80%;
         transition: .5s ease;
         opacity: 0;
         font-size: 20px;
@@ -145,7 +147,7 @@ div.container.item-5 {
     }
     .text {
         color: white;
-        font-size: 14px;
+        font-size: 11px;
         font-family: inherit;
         position: absolute;
         white-space: wrap;

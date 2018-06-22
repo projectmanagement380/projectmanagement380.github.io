@@ -42,7 +42,7 @@ body {
     letter-spacing: 0.1em;
     color: #F8F8FF;
     margin-top: 165px;
-    padding: 3%;
+    padding: 5%;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.5);
     
@@ -68,10 +68,6 @@ body {
 .topnav a:hover {
     border-bottom: 2px solid black;
     color: #fff;
-}
-
-.topnav a.active {
-    color: deeppink;
 }
 
 .topnav .search-container {
@@ -122,7 +118,7 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;
+    font-size: inherit;
     border: none;
     outline: none;
     color: black;
@@ -184,6 +180,12 @@ body {
     .topnav a.active:hover {
         border-bottom: none;
     }
+    .dropdown:hover {
+        border-bottom: none;
+    }
+    #myTopnav {
+        margin-bottom: 4rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -210,12 +212,15 @@ body {
         display: block;
         width: 100%;
         text-align: left;
+        font-size: 1.2rem;
     }
     .topnav a:hover {
         border-bottom: none;
     }
     .main-header_logo {
         margin-left: 35px;
+        background-color: rgb(0, 0, 0, 0.5);
+
     }
     #main_pm {
         font-size: 4rem;
@@ -326,6 +331,7 @@ small a:hover {
 @media screen and (max-width: 600px) {
     .topnav .search-container {
         float: none;
+
     }
     input[type=text],
     .topnav .search-container button {
@@ -333,24 +339,42 @@ small a:hover {
         display: block;
         text-align: left;
         width: 90%;
+
     }
     .topnav input[type=text] {
-        border: 1px solid #ccc;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0.7rem;
     }
     .topnav .search-container button {
         float: right;
         margin-right: 0;
         width: 10%;
         text-align: center;
-        padding: 10px;
+        padding: 0.7rem;
     }
     .dropdown-content a {
         padding: 6px 10px;
         
     }
+    .topnav a {
+        font-size: 1.2rem;
+    }
+
+    .topnav a.active {
+        font-size: 1.8rem;
+        margin-top: 0.3rem;
+    }
+    .topnav a.icon {
+        font-size: 1.8rem;
+    }
+
+    /* div#myTopnav.topnav {
+        height: 4rem;
+    } */
+    
 }
 
 #wrapper {
