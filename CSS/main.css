@@ -219,11 +219,12 @@ body {
     }
     .main-header_logo {
         margin-left: 35px;
-        background-color: rgb(0, 0, 0, 0.5);
 
     }
     #main_pm {
         font-size: 4rem;
+        background-color: rgb(0, 0, 0, 0.5);
+
     }
     .home {
         color: aliceblue;
