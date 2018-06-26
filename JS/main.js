@@ -29,3 +29,13 @@ function dropDownMenu() {
         dropDawn.className = "topnav";
     }
 }
+
+(function() {
+    var cx = '012837430047491262480:eiiweu32siw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
