@@ -49,6 +49,7 @@ body {
     
 }
 
+
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.2);
@@ -454,7 +455,7 @@ small a:hover {
 
     .topnav a.active {
         font-size: 1.8rem;
-        margin-top: 0.3rem;
+        /* margin-top: 0.3rem; */
     }
     .topnav a.icon {
         font-size: 1.8rem;
