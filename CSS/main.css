@@ -9,7 +9,6 @@
 }
 
 html {
-    /* height: 100%; */
     background: url(/images/white-background.jpeg);
     background-position: left 10% bottom 25%;
     background-attachment: fixed;
@@ -48,8 +47,8 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-appearance: none;
     -moz-appearance: none;
-  }
-    
+}
+
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.2);
@@ -66,57 +65,28 @@ body {
     padding: 1.5rem 1rem;
     text-decoration: none;
     font-size: 1rem;
-
 }
 
 .topnav a:hover {
-    /* border-bottom: 1.5px solid black; */
     color: #fff;
 }
 
 .topnav .search-container {
     display: flex;
-   
 }
 
-/* .topnav input[type=text] {
-    padding: 0.375rem;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    border: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.gsc-search-button-v2 {
+    border: none !important;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-right: 1rem;
+    padding: 6px 15px 6px 15px !important;
+    background-color: #60b0f4 !important;
     outline: none;
 }
 
-.topnav .search-container button {
-    float: right;
-    padding: 0.375rem 0.625rem;
-    margin-top: 0.5rem;
-    margin-right: 2rem;
-    background: #008CBA;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    color: white;
-}
-
-.topnav .search-container button:hover {
-    opacity: 0.8;
-} */
-
-  .gsc-search-button-v2  {
-      border: none !important;
-      height: 30px;
-      width: 30px;
-      margin-top: 5px;
-      margin-right: 1rem;
-      padding: 6px 15px 6px 15px !important;
-      background-color: #60b0f4 !important;
-      outline: none;
-  }
-
-  .topnav .gsc-input-box {
+.topnav .gsc-input-box {
     float: right;
     border: none;
     margin-top: 5px;
@@ -125,30 +95,29 @@ body {
     outline: none;
     width: 50% !important;
     height: 30px !important;
-  }
+}
 
-  .gsst_a .gscb_a {
-     display: none;
-  }
+.gsst_a .gscb_a {
+    display: none;
+}
 
-  input#gsc-i-id1.gsc-input {
-      margin-bottom: 1rem !important;
-      width: 150%;
-      background: none;
-      text-indent: 0;
+input#gsc-i-id1.gsc-input {
+    margin-bottom: 1rem !important;
+    width: 150%;
+    background: none;
+    text-indent: 0;
+}
 
-  }
-
-  input.gsc-input {
+input.gsc-input {
     font-size: 17px;
 }
 
-  .topnav .search-container .gsc-control-cse.gsc-control-cse-en {
-      background: none !important;
-      border: none !important;
-      width: 70%;
-      float: right
-  }
+.topnav .search-container .gsc-control-cse.gsc-control-cse-en {
+    background: none !important;
+    border: none !important;
+    width: 70%;
+    float: right
+}
 
 .main_nav a {
     text-decoration: none;
@@ -209,122 +178,6 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* .dropbtn:hover {
-    color: #fff;
-} */
-
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-        border-bottom: none;
-        color: black;
-    }
-    .topnav a.active:hover {
-        border-bottom: none;
-    }
-    .dropdown:hover {
-        border-bottom: none;
-    }
-   
-    .topnav {
-        background: none;
-    }
-    .topnav .gsc-input-box {
-        /* display: block; */
-        display: none;
-    }
-
-    .gsc-search-button-v2 {
-        display: none;
-    }
-
-    /* .topnav .search-container .gsc-control-cse.gsc-control-cse-en {
-        display: none;
-        display: block;
-        margin-top: 2rem;
-        float: none;
-    } */
-
-    /* div#__gcse_0 {
-        height: 100px;
-        margin-top: -1rem;
-    } */
-    .topnav a {
-        padding: 0.5rem 0 0 1rem;
-    }
-
-    .topnav .search-container {
-        display: inline-block;
-       
-    }
-
-    .topnav .search-container .gsc-control-cse.gsc-control-cse-en {
-        width: 260px;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        padding-right: 1rem;
-    }
-    .topnav.responsive .dropdown {
-        float: none;
-    }
-    .topnav.responsive .dropdown-content {
-        position: relative;
-    }
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-        font-size: 0.9rem;
-    }
-    .topnav a:hover {
-        border-bottom: none;
-    }
-    .main-header_logo {
-        margin-left: 35px;
-
-    }
-    #main_pm {
-        font-size: 4rem;
-        /* background-color: rgba(0, 0, 0, 0.5); */
-
-    }
-    .home {
-        color: aliceblue;
-    }
-    h1 {
-        color: deeppink;
-        
-    }
-    h2 {
-        margin-left: 2.5rem;
-    }
-    .section-title {
-        text-align: center;
-        font-size: 3rem;
-    }
-    
 }
 
 .col-container {
@@ -413,58 +266,6 @@ small a:hover {
     text-decoration-line: underline;
 }
 
-@media screen and (max-width: 600px) {
-    .topnav .search-container {
-        float: none;
-
-    }
-    /* input[type=text],
-    .topnav .search-container button {
-        float: left;
-        display: block;
-        text-align: left;
-        width: 90%;
-
-    } */
-    /* .topnav i.gsc-input-box  {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        padding: 0.7rem;
-    } */
-    /* .topnav .search-container button {
-        float: right;
-        margin-right: 0;
-        width: 10%;
-        text-align: center;
-        padding: 0.7rem;
-    } */
-    .dropdown-content a {
-        padding: 6px 28px;
-        background: #60b0f4;
-        color: #f9f9f9
-        
-    }
-    .dropbtn:hover {
-        color: black;
-    }
-    .topnav a {
-        font-size: 0.9rem;
-    }
-
-    .topnav a.active {
-        font-size: 1.8rem;
-        /* margin-top: 0.3rem; */
-    }
-    .topnav a.icon {
-        font-size: 1.8rem;
-        /* padding-right: 1rem; */
-    }
-
-    
-}
-
 #wrapper {
     margin: 160px 50px;
 }
@@ -534,8 +335,8 @@ section.container:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 /* Scroll up button */
+
 #scroll {
     position: fixed;
     right: 2px;
@@ -552,8 +353,124 @@ section.container:hover {
 }
 
 #scroll:hover {
-   opacity: 0.7;
+    opacity: 0.7;
+}
 
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+        border-bottom: none;
+        color: black;
+    }
+    .topnav a.active:hover {
+        border-bottom: none;
+    }
+    .dropdown:hover {
+        border-bottom: none;
+    }
+    .topnav {
+        background: none;
+        border-top: 1px #ccc solid;
+    }
+    .topnav .gsc-input-box {
+        display: none;
+    }
+    .gsc-search-button-v2 {
+        display: none;
+    }
+
+    .topnav a {
+        padding: 0.5rem 0 0 1rem;
+    }
+    .topnav .search-container {
+        display: inline-block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding-right: 1rem;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+        background: #60b0f4;
+        padding: 1rem;
+
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .dropdown-content a {
+        color: #f9f9f9;
+    }
+
+    .dropdown .dropbtn {
+        padding: 0.5rem 0rem 0 1rem;
+        
+    }
+    .topnav a:hover {
+        border-bottom: none;
+    }
+    .main-header_logo {
+        margin-left: 35px;
+        border-width: 100%;
+    }
+    .home {
+        color: aliceblue;
+    }
+    h1 {
+        color: deeppink;
+    }
+    h2 {
+        margin-left: 2.5rem;
+    }
+    .section-title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .topnav .search-container {
+        float: none;
+    }
+    
+    .dropbtn:hover {
+        color: black;
+    }
+    .topnav {
+        height: auto;
+    }
+    .topnav a {
+        font-size: 0.9rem;
+    }
+    .topnav a.active {
+        font-size: 1.8rem;
+        margin-top: 0.3rem;
+    }
+    .topnav a.icon {
+        font-size: 1.8rem;
+    }
+   
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -561,19 +478,18 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        /* background-image: url(/images/white-background-mobile.jpg); */
-        /* background-position: bottom 20%;
-        background: no-repeat; */
-    }
+    /* body {
+        background-image: url(/images/white-background-mobile.jpg);
+         background-position: bottom 20%;
+        background: no-repeat;
+    } */
     .col {
         display: block;
     }
     #main_pm {
         font-size: 2rem;
         width: 100%;
-        margin-top: 1rem;
-
+        margin-top: 0;
     }
     #book_three_intro,
     #book_two_intro,
@@ -601,10 +517,8 @@ section.container:hover {
     .wrapper {
         min-height: 100vh;
     }
-    
     .right {
         width: 230px;
-        
     }
     /* Incorrect answer */
     .wrong {
@@ -613,24 +527,18 @@ section.container:hover {
     .ans {
         margin-left: 22px;
     }
-
     #wrapper {
         margin: 50px 10px;
     }
     .main-footer {
         margin-top: 10rem;
     }
-
-    
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
-        /* background: no-repeat; */
-    }
+    
     .button {
         margin-left: 5.3rem;
     }
@@ -640,11 +548,9 @@ section.container:hover {
     .main-header_logo {
         margin-left: 30px;
     }
-
     .ans {
         margin-left: 45px;
     }
-
     .topnav .search-container .gsc-control-cse.gsc-control-cse-en {
         width: 317px;
     }
@@ -655,10 +561,7 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
-        /* background: no-repeat; */
-    }
+    
     .responsive_img {
         margin-left: 80px;
     }
@@ -678,10 +581,7 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
-        /* background: no-repeat; */
-    }
+   
     .button {
         margin-left: 3.3rem;
     }
@@ -696,19 +596,15 @@ section.container:hover {
     .main-footer {
         margin-top: 75rem;
     }
-
     .topnav .search-container button {
         margin-right: 0.5rem;
     }
-
     .topnav .search-container .gsc-control-cse.gsc-control-cse-en {
         background: none !important;
         border: none !important;
         width: 100%;
         float: right
     }
-
-    
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
@@ -716,10 +612,7 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        /* background-image: url(/images/rawpixel__unsplash_mobile.jpg); */
-        /* background: no-repeat; */
-    }
+    
     .button {
         margin-left: 4.6rem;
     }
@@ -730,4 +623,3 @@ section.container:hover {
         margin-top: 75rem;
     }
 }
-
