@@ -13,12 +13,11 @@
     width: 100%;
 }
 
-.flex-container {
+/* .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
-    /* justify-content: center; */
 }
 
 .overlay {
@@ -29,35 +28,32 @@
     width: 83%;
     height: 0%;
     transition: .5s ease;
-    border-radius: 10px;
+}
 
-  }
-
-  .container:hover .overlay {
+.container:hover .overlay {
     bottom: 12px;
     height: 92%;
-
-  }
-
+}
 
 div.container.item-1 {
     padding: 2rem 2rem 4rem 2rem;
-      }
+}
 
 div.container.item-2 {
-    padding: 2rem 2rem 4rem 2rem;    
-  }
+    padding: 2rem 2rem 4rem 2rem;
+}
 
 div.container.item-3 {
-    padding: 2rem 2rem 4rem 2rem;     
+    padding: 2rem 2rem 4rem 2rem;
 }
 
 div.container.item-4 {
-    padding: 2rem 2rem 4rem 2rem ;
+    padding: 2rem 2rem 4rem 2rem;
 }
 
 div.container.item-5 {
-    padding: 2rem 2rem 4rem 2rem;}
+    padding: 2rem 2rem 4rem 2rem;
+}
 
 .image {
     display: block;
@@ -65,7 +61,6 @@ div.container.item-5 {
     height: auto;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-
 }
 
 .text {
@@ -95,52 +90,9 @@ div.container.item-5 {
 
 .container:hover .overlay-name {
     opacity: 1;
-}
+} */
 
-/* @media only screen and (min-device-width: 320px) 
-and (max-device-width: 568px) 
-and (-webkit-min-device-pixel-ratio: 2) {
-    .text {
-        font-size: 12px;
-        font-weight: 300;
-    }
-
-    overlay {
-        position: absolute;
-        bottom: 94%;
-        background: rgba(0, 0, 0, 0.6);
-        overflow: hidden;
-        width: 800%;
-        height: 0%;
-        transition: .5s ease;
-        border-radius: 10px;
-    
-      }
-    
-      .container:hover .overlay {
-        bottom: 12px;
-        height: 92%;
-    
-      }
-
-      .image {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    
-    }
-}
-
-
-
-
- */
-
-
-
-@media (min-width: 40rem) {
+/* @media (min-width: 40rem) {
     .container {
         position: relative;
         width: 25%;
@@ -149,7 +101,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         display: flex;
         flex-wrap: wrap;
         align-content: space-around;
-        /* justify-content: center; */
     }
     div.container.item-1 {
         padding: 11rem 2rem 4rem 2rem;
@@ -171,8 +122,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
         top: 11rem;
         left: 2rem;
         right: 0;
-        border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         background: rgba(0, 0, 0, 0.5);
         overflow: hidden;
         width: 80%;
@@ -216,5 +167,5 @@ and (-webkit-min-device-pixel-ratio: 2) {
         color: #ff5454;
         font-weight: bold;
     }
-}
-
+    
+} */

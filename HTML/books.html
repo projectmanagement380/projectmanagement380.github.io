@@ -28,34 +28,40 @@
             <!--Navigation Menu -->
 
             <div class="topnav" id="myTopnav">
-                    <a href="/index.html" class="active">
-                        <i class=" fa fa-home"></i>
-                    </a>
-                    <a href="/HTML/books.html">Books</a>
-                    <div class="dropdown">
+                <a href="/index.html" class="active">
+                    <i class=" fa fa-home"></i>
+                </a>
+                <a href="/HTML/books.html">Books</a>
+                <div class="dropdown">
                     <button class="dropbtn">Resources
-                    <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                         <a href="#">Videos</a>
                         <a href="../HTML/data/quiz.html">Quiz</a>
                         <a href="#">Methods</a>
                         <a href="#">Project Management</a>
-                      </div>                
-                    </div>
-                    <a href="/HTML/aboutus.html">About us</a>
-                    <div class="search-container">
-                            <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
-    
-                        <form action="http://www.google.com">
-                            <input type="text" placeholder="Google Search" name="search" size="30" maxlength="120">
-                            <button type="submit">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </form>
                     </div>
                 </div>
-        </header> 
+                <a href="/HTML/aboutus.html">About us</a>
+                <div class="search-container">
+                    <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
+
+                    <script>
+                        (function () {
+                            var cx = '012837430047491262480:eiiweu32siw';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                        })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+            </div>
+        </header>
 
         <div class="wrapper">
             <div class="col-container">
@@ -113,16 +119,16 @@
                 </div>
             </div>
         </div>
-    
-            <footer class="main-footer">
-                <!--    provides info about sight-->
-                <small class="main-footer-content"> &copy;2018 CIT 380
-                    <p>Background photo by rawpixel on
-                        <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
-                    </p>
-                </small>
-            </footer>
-       
+
+        <footer class="main-footer">
+            <!--    provides info about sight-->
+            <small class="main-footer-content"> &copy;2018 CIT 380
+                <p>Background photo by rawpixel on
+                    <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                </p>
+            </small>
+        </footer>
+
         <script src="../JS/main.js"></script>
         <script src="../../JS/reveal.js"></script>
     </div>
