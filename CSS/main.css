@@ -27,12 +27,11 @@ body {
     padding-bottom: 6rem;
     min-height: 100%;
     overflow-x: hidden;
-
 }
 
 .main-header {
     width: 100vw;
-    /* background-color: rgba(0, 0, 0, 0.7); */
+    /* background-color: rgba(0, 0, 0, 0.7);  */
 }
 
 .main-header_logo {
@@ -49,14 +48,14 @@ body {
     margin-top: 10.5rem;
     padding: 5%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     margin-top: 0;
     width: 100%;
     height: 65.5px;
@@ -208,7 +207,6 @@ button.dropbtn:hover {
     margin-left: 115px;
     width: 183px;
     height: 290px;
-
 }
 
 #book_three_intro,
@@ -371,11 +369,57 @@ section.container:hover {
     opacity: 1;
 }
 
-/* @media screen and (max-width: 600px) {
+.menu-icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+   
+    a.active {
+        display: none;
+    }
+    .gsc-search-button-v2 {
+        display: none;
+    }
+    .topnav .search-container {
+        display: inline-block;
+    }
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
         display: none;
     }
+    td.gsc-input {
+        display: none;
+    }
+    div.gsc-control-cse.gsc-control-cse-en {
+        display: none;
+    }
+    #myTopnav.topnav {
+        background: none;
+    }
+
+
+    #myTopnav.menu-icon {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }   
+
+    .main-header_logo {
+        width: 200px;
+        height: 30px;
+        margin-left: 0.7rem;
+    }
+    /*
     .topnav a.icon {
         float: right;
         display: block;
@@ -404,9 +448,7 @@ section.container:hover {
         color: black;
 
     }
-    .topnav .search-container {
-        display: inline-block;
-    }
+
 
     .topnav.responsive {
         position: relative;
@@ -487,9 +529,8 @@ section.container:hover {
     }
     .topnav a.icon {
         font-size: 1.8rem;
-    }
-
-} */
+    } */
+}
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
@@ -556,7 +597,6 @@ section.container:hover {
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-
     .button {
         margin-left: 5.3rem;
     }
@@ -579,7 +619,6 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-
     .responsive_img {
         margin-left: 80px;
     }
@@ -599,7 +638,6 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
     .button {
         margin-left: 3.3rem;
     }
@@ -612,7 +650,6 @@ section.container:hover {
         font-size: 2rem;
     }
     .main-footer {
-
         margin-top: 75rem;
     }
     .topnav .search-container button {
@@ -624,7 +661,6 @@ section.container:hover {
         width: 100%;
         float: right
     }
-   
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
@@ -632,7 +668,6 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
-
     .button {
         margin-left: 4.6rem;
     }
