@@ -23,11 +23,16 @@ body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     font-size: 1rem;
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
     overflow-x: hidden;
+
 }
 
 .main-header {
     width: 100vw;
+    /* background-color: rgba(0, 0, 0, 0.7); */
 }
 
 .main-header_logo {
@@ -44,14 +49,14 @@ body {
     margin-top: 10.5rem;
     padding: 5%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 0;
     width: 100%;
     height: 65.5px;
@@ -60,7 +65,7 @@ body {
 .topnav a {
     float: left;
     display: block;
-    color: black;
+    color: #fff;
     text-align: center;
     padding: 1.5rem 1rem;
     text-decoration: none;
@@ -68,7 +73,8 @@ body {
 }
 
 .topnav a:hover {
-    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px #fff solid;
 }
 
 .topnav .search-container {
@@ -139,7 +145,7 @@ input.gsc-input {
     font-size: inherit;
     border: none;
     outline: none;
-    color: black;
+    color: #fff;
     padding: 1.5rem 1rem;
     background-color: inherit;
     font-family: inherit;
@@ -154,6 +160,10 @@ input.gsc-input {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
+
+button.dropbtn:hover {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .dropdown-content a {
@@ -198,6 +208,7 @@ input.gsc-input {
     margin-left: 115px;
     width: 183px;
     height: 290px;
+
 }
 
 #book_three_intro,
@@ -248,9 +259,13 @@ input.gsc-input {
 }
 
 .main-footer {
-    margin-top: 40rem;
+    /* margin-top: 40rem; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     color: #fff;
-    width: 100%;
+    /* width: 100%; */
     padding: 10px 0;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
@@ -341,11 +356,11 @@ section.container:hover {
     position: fixed;
     right: 2px;
     bottom: 100px;
-    color: deeppink;
     cursor: pointer;
+    opacity: 0.6;
     width: 45px;
     height: 45px;
-    text-indent: -1px;
+    text-indent: 0;
     display: none;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
@@ -353,10 +368,10 @@ section.container:hover {
 }
 
 #scroll:hover {
-    opacity: 0.7;
+    opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
         display: none;
@@ -386,6 +401,8 @@ section.container:hover {
 
     .topnav a {
         padding: 0.5rem 0 0 1rem;
+        color: black;
+
     }
     .topnav .search-container {
         display: inline-block;
@@ -427,7 +444,8 @@ section.container:hover {
 
     .dropdown .dropbtn {
         padding: 0.5rem 0rem 0 1rem;
-        
+        color: black;
+
     }
     .topnav a:hover {
         border-bottom: none;
@@ -453,7 +471,7 @@ section.container:hover {
     .topnav .search-container {
         float: none;
     }
-    
+
     .dropbtn:hover {
         color: black;
     }
@@ -470,8 +488,8 @@ section.container:hover {
     .topnav a.icon {
         font-size: 1.8rem;
     }
-   
-}
+
+} */
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
@@ -538,7 +556,7 @@ section.container:hover {
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    
+
     .button {
         margin-left: 5.3rem;
     }
@@ -561,7 +579,7 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-    
+
     .responsive_img {
         margin-left: 80px;
     }
@@ -581,7 +599,7 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-   
+
     .button {
         margin-left: 3.3rem;
     }
@@ -594,6 +612,7 @@ section.container:hover {
         font-size: 2rem;
     }
     .main-footer {
+
         margin-top: 75rem;
     }
     .topnav .search-container button {
@@ -605,6 +624,7 @@ section.container:hover {
         width: 100%;
         float: right
     }
+   
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
@@ -612,7 +632,7 @@ section.container:hover {
 /* Portrait and Landscape */
 
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
-    
+
     .button {
         margin-left: 4.6rem;
     }

@@ -1,69 +1,159 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Page | Website | Keywords</title>
-  <meta name="description" content="Short Description of the page.">
-  <meta name="viewport" content="width=device-width">
-  <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            transition: background-color .5s;
+        }
+
+        .menu-icon {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+
+        a.active {
+            font-size: 1.8rem;
+            margin-top: 0.3rem;
+        }
+
+        a.icon {
+            font-size: 1.8rem;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        .container {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <style>
-      .gsc-input-button {
-        color: red !important;
-        height: 30px !important;
-        width: 50px !important;
-        border-radius: 50px;
-      }
 
-      .gsc-input-box {
-        float: right;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        width: 30% !important;
-        border-color: #746534 !important;
-        height: 30px !important;
-      }
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/HTML/books.html">Books</a>
+        <div class="dropdown">
+            <button class="dropbtn">Resorces
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Videos</a>
+                <a href="HTML/data/quiz.html">Quiz</a>
+                <a href="./HTML/data/methods.html">Methods</a>
+                <a href="#">Project Management</a>
+            </div>
+        </div>
+        <a href="/HTML/aboutus.html">About us</a>
+        <div class="search-container">
+            <!-- <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a> -->
+     
+        </div>
+    </div>
 
-      #gsc-i-id1 {
-        background: none !important;
-      }
+    <div id="main">
+        <div class="container" onclick="openNav()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </div>
 
-      .gsc-input-button:hover {
-        background: #FEBD17 url(http://www.google.com/uds/css/v2/search_box_icon.png)no-repeat !important;
-        background-position: 20px !important;
-        border-color: #FEBD17 !important;
-      }
-    </style>
     <script>
-      (function () {
-        var cx = '012837430047491262480:eiiweu32siw';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <gcse:search></gcse:search>
-  </header>
-  <nav>
-    <ul>
-      <li>
-        <a href="#" title="Go to home page">Home</a>
-      </li>
-    </ul>
-  </nav>
-  <main>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
 
-  </main>
-  <footer>
-    &copy;2017 Your name here
-  </footer>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
 </body>
 
 </html>

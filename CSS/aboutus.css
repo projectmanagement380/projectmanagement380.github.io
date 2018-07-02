@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-/* .flex-container {
+.flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,6 +23,10 @@
 .overlay {
     position: absolute;
     bottom: 94%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
     background: rgba(0, 0, 0, 0.6);
     overflow: hidden;
     width: 83%;
@@ -90,9 +94,9 @@ div.container.item-5 {
 
 .container:hover .overlay-name {
     opacity: 1;
-} */
+}
 
-/* @media (min-width: 40rem) {
+@media (min-width: 40rem) {
     .container {
         position: relative;
         width: 25%;
@@ -103,28 +107,23 @@ div.container.item-5 {
         align-content: space-around;
     }
     div.container.item-1 {
-        padding: 11rem 2rem 4rem 2rem;
     }
     div.container.item-2 {
-        padding: 11rem 2rem 4rem 2rem;
     }
     div.container.item-3 {
-        padding: 11rem 2rem 4rem 2rem;
     }
     div.container.item-4 {
-        padding: 11rem 2rem 4rem 2rem;
     }
     div.container.item-5 {
-        padding: 11rem 2rem 4rem 2rem;
     }
     .overlay {
         position: absolute;
-        top: 11rem;
+        top: 2rem;
         left: 2rem;
         right: 0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7);
         overflow: hidden;
         width: 80%;
         height: 0;
@@ -132,11 +131,13 @@ div.container.item-5 {
     }
     .container:hover .overlay {
         bottom: 0;
-        height: 61%;
+        height: 79.5%;
     }
     .image {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        /* border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px; */
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .overlay-name {
@@ -168,4 +169,4 @@ div.container.item-5 {
         font-weight: bold;
     }
     
-} */
+}
