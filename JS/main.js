@@ -30,7 +30,7 @@ function dropDownMenu() {
     }
 }
 
-(function() {
+(function () {
     var cx = '012837430047491262480:eiiweu32siw';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
@@ -38,4 +38,28 @@ function dropDownMenu() {
     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
-  })();
+})();
+
+//-------->>> Mobil navigation <<<-----------
+
+function openNav() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("mySidenav").style.width = "282px";
+    document.getElementById("main").style.marginLeft = "250px";
+    // document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
+
+}
+
+function closeNav() {
+    document.getElementById("main").style.display = "block";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    //  document.body.style.backgroundImage = "url('../images/white-background.jpeg')";
+    // document.body.style.background.position = "left 10% bottom 25%";
+    // document.body.style.background.attachment = "fixed";
+    // document.body.style.background.repeat = "no-repeat";
+    // document.body.style.backgroundSize = "cover";
+}
+
+    
+

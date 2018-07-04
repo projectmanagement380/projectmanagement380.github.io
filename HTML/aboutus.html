@@ -14,127 +14,131 @@
 </head>
 
 <body>
-    <div class="background">
-        <header class="main-header">
-            <div>
-                <a href="/index.html" class="main-header">
-                    <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
-                </a>
-            </div>
+    <div id="main-logo">
+        <a href="../index.html" class="main-header"></a>
+        <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" alt="Logo" class="main-header_logo">
+        </a>
 
-            <!--Navigation Menue -->
+    </div>
 
-            <div class="topnav" id="myTopnav">
-                <a href="/index.html" class="active">
-                    <i class=" fa fa-home"></i>
-                </a>
-                <a href="/HTML/books.html">Books</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Resorces
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Videos</a>
-                        <a href="../HTML/data/quiz.html">Quiz</a>
-                        <a href="./data/methods.html">Methods</a>
-                        <a href="#">Project Management</a>
-                    </div>
-                </div>
-                <a href="/HTML/aboutus.html">About us</a>
-                <div class="search-container">
-                    <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
-
-                      <!-- Google search bar -->
-                      <gcse:search></gcse:search>
+    <!--Navigation Menue -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active">
+                <i class=" fa fa-home"></i>
+            </a>
+            <a href="/HTML/books.html">Books</a>
+            <div class="dropdown">
+                <button class="dropbtn">Resorces
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Videos</a>
+                    <a href="../HTML/data/quiz.html">Quiz</a>
+                    <a href="../HTML/data/methods.html">Methods</a>
+                    <a href="#">Project Management</a>
                 </div>
             </div>
-        </header>
-
-        <main>
-
-            <div class="flex-container">
-                <div class="container item-1">
-                    <img src="../images/jaime.JPG" alt="Jaime Rosales" class="image">
-                    <div class="overlay"> 
-                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
-                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
-                            began to be passionate about web programming, e.g. developing apps and building websites.
-                            <br>
-                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
-                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
-                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
-                            in life such going on walks, see the sunsets and admire the creation.</p>
-                    </div>
-                    <div class="overlay-name">Jaime Rosale</div>
-                </div>
-                <div class="container item-2">
-                    <img src="../images/jim.jpg" alt="Jim Greene" class="image">
-                    <div class="overlay">
-                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
-                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
-                            began to be passionate about web programming, e.g. developing apps and building websites.
-                            <br>
-                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
-                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
-                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
-                            in life such going on walks, see the sunsets and admire the creation.</p>
-                    </div>
-                    <div class="overlay-name">Jim Greene</div>
-                </div>
-                <div class="container item-3">
-                    <img src="../images/Sunny.jpg" alt="Kristy Prince" class="image">
-                    <div class="overlay">
-                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
-                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
-                            began to be passionate about web programming, e.g. developing apps and building websites.
-                            <br>
-                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
-                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
-                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
-                            in life such going on walks, see the sunsets and admire the creation.</p>
-                    </div>
-                    <div class="overlay-name">Kristy Prince</div>
-                </div>
-                <div class="container item-4">
-                    <img src="../images/Sunny.jpg" alt="Sunny Zhou" class="image">
-                    <div class="overlay">
-                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
-                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
-                            began to be passionate about web programming, e.g. developing apps and building websites.
-                            <br>
-                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
-                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
-                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
-                            in life such going on walks, see the sunsets and admire the creation.</p>
-                    </div>
-                    <div class="overlay-name">Sunny Zhou</div>
-                </div>
-                <div class="container item-5">
-                    <img src="../images/jim.jpg" alt="Blake Jennings" class="image">
-                    <div class="overlay">
-                        <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in
-                            Computer Ingormation Technology. I am interested in IT and everything in its orbit. I recently
-                            began to be passionate about web programming, e.g. developing apps and building websites.
-                            <br>
-                            <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy
-                            the most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my
-                            kids grow and do fun things, they are my inpiration and motivation. I enjoy the simple things
-                            in life such going on walks, see the sunsets and admire the creation.</p>
-                    </div>
-                    <div class="overlay-name">Blake Jennings</div>
-                </div>
+            <a href="../HTML/aboutus.html">About us</a>
+            <div class="search-container">
+                <!-- Google search bar -->
+                <gcse:search></gcse:search>
             </div>
+        </div>
+    </div>
 
-        </main>
+    <div id="main">
+        <div class="container" onclick="openNav()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </div>
+    <main>
 
-        <footer class="main-footer">
-            <!--    provides info about sight-->
-            <small> &copy;2018 CIT 380
-                <p>Background photo by rawpixel on
-                    <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
-                </p>
-            </small>
-        </footer>
+        <div class="flex-container">
+            <div class="container item-1">
+                <!-- <img src="../images/jaime.JPG" alt="Jaime Rosales" class="image"> -->
+                <div class="overlay">
+                    <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in Computer
+                        Ingormation Technology. I am interested in IT and everything in its orbit. I recently began to be
+                        passionate about web programming, e.g. developing apps and building websites.
+                        <br>
+                        <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy the
+                        most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my kids grow
+                        and do fun things, they are my inpiration and motivation. I enjoy the simple things in life such
+                        going on walks, see the sunsets and admire the creation.</p>
+                </div>
+                <div class="overlay-name">Jaime Rosale</div>
+            </div>
+            <div class="container item-2">
+                <!-- <img src="../images/jim.jpg" alt="Jim Greene" class="image"> -->
+                <div class="overlay">
+                    <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in Computer
+                        Ingormation Technology. I am interested in IT and everything in its orbit. I recently began to be
+                        passionate about web programming, e.g. developing apps and building websites.
+                        <br>
+                        <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy the
+                        most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my kids grow
+                        and do fun things, they are my inpiration and motivation. I enjoy the simple things in life such
+                        going on walks, see the sunsets and admire the creation.</p>
+                </div>
+                <div class="overlay-name">Jim Greene</div>
+            </div>
+            <div class="container item-3">
+                <!-- <img src="../images/Sunny.jpg" alt="Kristy Prince" class="image"> -->
+                <div class="overlay">
+                    <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in Computer
+                        Ingormation Technology. I am interested in IT and everything in its orbit. I recently began to be
+                        passionate about web programming, e.g. developing apps and building websites.
+                        <br>
+                        <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy the
+                        most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my kids grow
+                        and do fun things, they are my inpiration and motivation. I enjoy the simple things in life such
+                        going on walks, see the sunsets and admire the creation.</p>
+                </div>
+                <div class="overlay-name">Kristy Prince</div>
+            </div>
+            <div class="container item-4">
+                <!-- <img src="../images/Sunny.jpg" alt="Sunny Zhou" class="image"> -->
+                <div class="overlay">
+                    <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in Computer
+                        Ingormation Technology. I am interested in IT and everything in its orbit. I recently began to be
+                        passionate about web programming, e.g. developing apps and building websites.
+                        <br>
+                        <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy the
+                        most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my kids grow
+                        and do fun things, they are my inpiration and motivation. I enjoy the simple things in life such
+                        going on walks, see the sunsets and admire the creation.</p>
+                </div>
+                <div class="overlay-name">Sunny Zhou</div>
+            </div>
+            <div class="container item-5">
+                <!-- <img src="../images/jim.jpg" alt="Blake Jennings" class="image"> -->
+                <div class="overlay">
+                    <p class="text">I am an enthusiastic student at BYU-I (Brigham Young University Idaho). I'm pursuing a degree in Computer
+                        Ingormation Technology. I am interested in IT and everything in its orbit. I recently began to be
+                        passionate about web programming, e.g. developing apps and building websites.
+                        <br>
+                        <br> When I'm not programing I like to play soccer, listen to music and wactch movies. What I enjoy the
+                        most is spend time with my wife Brittany and my two sons Liam and Benson. I love to see my kids grow
+                        and do fun things, they are my inpiration and motivation. I enjoy the simple things in life such
+                        going on walks, see the sunsets and admire the creation.</p>
+                </div>
+                <div class="overlay-name">Blake Jennings</div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <small> &copy;2018 CIT 380
+            <p>Background photo by rawpixel on
+                <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+            </p>
+        </small>
+    </footer>
     </div>
     <script src="../JS/main.js"></script>
 </body>

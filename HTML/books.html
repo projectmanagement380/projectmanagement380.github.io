@@ -13,124 +13,120 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
 </head>
 
 <body>
-    <div class="background">
-        <header class="main-header">
-            <div>
-                <a href="/index.html" class="main-header">
-                    <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" alt="Logo" class="main-header_logo">
-                </a>
-            </div>
+    <div id="main-logo">
+        <a href="../index.html" class="main-header"></a>
+        <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" alt="Logo" class="main-header_logo">
+        </a>
 
-            <!--Navigation Menu -->
+    </div>
 
-            <div class="topnav" id="myTopnav">
-                <a href="/index.html" class="active">
-                    <i class=" fa fa-home"></i>
-                </a>
-                <a href="/HTML/books.html">Books</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Resources
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Videos</a>
-                        <a href="../HTML/data/quiz.html">Quiz</a>
-                        <a href="./data/methods.html">Methods</a>
-                        <a href="#">Project Management</a>
-                    </div>
-                </div>
-                <a href="/HTML/aboutus.html">About us</a>
-                <div class="search-container">
-                    <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
-
-                    <script>
-                        (function () {
-                            var cx = '012837430047491262480:eiiweu32siw';
-                            var gcse = document.createElement('script');
-                            gcse.type = 'text/javascript';
-                            gcse.async = true;
-                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                            var s = document.getElementsByTagName('script')[0];
-                            s.parentNode.insertBefore(gcse, s);
-                        })();
-                    </script>
-                    <gcse:search></gcse:search>
+    <!--Navigation Menue -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active">
+                <i class=" fa fa-home"></i>
+            </a>
+            <a href="/HTML/books.html">Books</a>
+            <div class="dropdown">
+                <button class="dropbtn">Resorces
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Videos</a>
+                    <a href="../HTML/data/quiz.html">Quiz</a>
+                    <a href="../HTML/data/methods.html">Methods</a>
+                    <a href="#">Project Management</a>
                 </div>
             </div>
-        </header>
-
-        <div class="wrapper">
-            <div class="col-container">
-                <div class="col">
-                    <img src="../images/3rd-alternative.jpg" id="book1" class="responsive_img" alt="3rd Alternative">
-                    <p class="button" onclick="toggleIntroOne()">Description</p>
-
-                    <p id="book_one_intro">From the multimillion-copy bestselling author of The 7 Habits of Highly Effective People—hailed as the
-                        #1 Most Influential Business Book of the Twentieth Century—The 3rd Alternative turns Dr. Stephen
-                        R. Covey’s formidable insight to a powerful new way to resolve professional and personal difficulties
-                        and create solutions to great challenges in organizations and society.
-                        <br>
-
-                        <br>There are many methods of “conflict resolution,” but most involve compromise, a low-level accommodation
-                        that stops the fight without breaking through to amazing new results. The 3rd Alternative introduces
-                        a breakthrough approach to conflict resolution and creative problem solving, transcending traditional
-                        solutions to conflict by forging a path toward a third option, a 3rd Alternative that moves beyond
-                        your way or my way to a higher and better way—one that allows both parties to emerge from debate
-                        or even heated conflict in a far better place than either had envisioned. With the 3rd Alternative,
-                        nobody has to give up anything, and everyone wins.
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="../images/management-rewired.jpeg" id="book2" class="responsive_img" alt="Management Rewired">
-                    <p class="button" onclick="toggleIntroTwo()">Description</p>
-
-                    <p id="book_two_intro">Why is it so hard for managers to get the results they want? According to the latest brain science, it's
-                        because most of what they do produces the opposite of what they expect. Appeals to reason fall short,
-                        for our decisions are made emotionally, and logic is at best an after-the-fact justification for
-                        what we've already determined to do.
-                        <br>
-
-                        <br>That's just one of the many amazing discoveries that explain why management is so challenging. but
-                        as Charles Jacobs explains, once we understand the lessons of neuroscience, we're able to create
-                        more powerful strategies, inspire people to maximize their potential, and overcome the biggest hurdle
-                        to improving business performance-making change stick.
-                    </p>
-                </div>
-
-                <div class="col">
-                    <img src="../images/making-thigs-happen2.jpg" id="book3" class="responsive_img" alt="3rd Alternative">
-                    <p class="button" onclick="toggleIntroThree()">Description</p>
-
-                    <p id="book_three_intro">In the updated edition of this critically acclaimed and bestselling book, Microsoft project veteran Scott
-                        Berkun offers a collection of essays on field-tested philosophies and strategies for defining, leading,
-                        and managing projects. Each essay distills complex concepts and challenges into practical nuggets
-                        of useful advice, and the new edition now adds more value for leaders and managers of projects everywhere.
-                        Based on his nine years of experience as a program manager for Internet Explorer and lead program
-                        manager for Windows and MSN, Berkun explains to technical and non-technical readers alike what it
-                        takes to get through a large software or web development project. Making Things Happen doesn't cite
-                        specific methods, but focuses on philosophy and strategy. Unlike other project management books,
-                        Berkun offers personal essays in a comfortable style and easy tone that emulate the relationship
-                        of a wise project manager who gives good, entertaining and passionate advice to those who ask.
-                    </p>
-                </div>
+            <a href="../HTML/aboutus.html">About us</a>
+            <div class="search-container">
+                <!-- <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a> -->
+                <!-- Google search bar -->
+                <gcse:search></gcse:search>
             </div>
         </div>
+    </div>
 
-        <footer class="main-footer">
-            <!--    provides info about sight-->
-            <small class="main-footer-content"> &copy;2018 CIT 380
-                <p>Background photo by rawpixel on
-                    <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+    <div id="main">
+        <div class="container" onclick="openNav()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="col-container">
+            <div class="col">
+                <img src="../images/3rd-alternative.jpg" id="book1" class="responsive_img" alt="3rd Alternative">
+                <p class="button" onclick="toggleIntroOne()">Description</p>
+
+                <p id="book_one_intro">From the multimillion-copy bestselling author of The 7 Habits of Highly Effective People—hailed as the #1
+                    Most Influential Business Book of the Twentieth Century—The 3rd Alternative turns Dr. Stephen R. Covey’s
+                    formidable insight to a powerful new way to resolve professional and personal difficulties and create
+                    solutions to great challenges in organizations and society.
+                    <br>
+
+                    <br>There are many methods of “conflict resolution,” but most involve compromise, a low-level accommodation
+                    that stops the fight without breaking through to amazing new results. The 3rd Alternative introduces
+                    a breakthrough approach to conflict resolution and creative problem solving, transcending traditional
+                    solutions to conflict by forging a path toward a third option, a 3rd Alternative that moves beyond your
+                    way or my way to a higher and better way—one that allows both parties to emerge from debate or even heated
+                    conflict in a far better place than either had envisioned. With the 3rd Alternative, nobody has to give
+                    up anything, and everyone wins.
                 </p>
-            </small>
-        </footer>
+            </div>
+            <div class="col">
+                <img src="../images/management-rewired.jpeg" id="book2" class="responsive_img" alt="Management Rewired">
+                <p class="button" onclick="toggleIntroTwo()">Description</p>
 
-        <script src="../JS/main.js"></script>
-        <script src="../../JS/reveal.js"></script>
+                <p id="book_two_intro">Why is it so hard for managers to get the results they want? According to the latest brain science, it's
+                    because most of what they do produces the opposite of what they expect. Appeals to reason fall short,
+                    for our decisions are made emotionally, and logic is at best an after-the-fact justification for what
+                    we've already determined to do.
+                    <br>
+
+                    <br>That's just one of the many amazing discoveries that explain why management is so challenging. but as
+                    Charles Jacobs explains, once we understand the lessons of neuroscience, we're able to create more powerful
+                    strategies, inspire people to maximize their potential, and overcome the biggest hurdle to improving
+                    business performance-making change stick.
+                </p>
+            </div>
+
+            <div class="col">
+                <img src="../images/making-thigs-happen2.jpg" id="book3" class="responsive_img" alt="3rd Alternative">
+                <p class="button" onclick="toggleIntroThree()">Description</p>
+
+                <p id="book_three_intro">In the updated edition of this critically acclaimed and bestselling book, Microsoft project veteran Scott
+                    Berkun offers a collection of essays on field-tested philosophies and strategies for defining, leading,
+                    and managing projects. Each essay distills complex concepts and challenges into practical nuggets of
+                    useful advice, and the new edition now adds more value for leaders and managers of projects everywhere.
+                    Based on his nine years of experience as a program manager for Internet Explorer and lead program manager
+                    for Windows and MSN, Berkun explains to technical and non-technical readers alike what it takes to get
+                    through a large software or web development project. Making Things Happen doesn't cite specific methods,
+                    but focuses on philosophy and strategy. Unlike other project management books, Berkun offers personal
+                    essays in a comfortable style and easy tone that emulate the relationship of a wise project manager who
+                    gives good, entertaining and passionate advice to those who ask.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <!--    provides info about sight-->
+        <small class="main-footer-content"> &copy;2018 CIT 380
+            <p>Background photo by rawpixel on
+                <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+            </p>
+        </small>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+    <script src="../../JS/reveal.js"></script>
     </div>
 </body>
 

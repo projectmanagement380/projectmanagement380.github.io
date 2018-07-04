@@ -25,30 +25,40 @@
 
             <!--Navigation Menue -->
 
-            <div class="topnav" id="myTopnav">
-                <a href="/index.html" class="active">
-                    <i class=" fa fa-home"></i>
-                </a>
-                <a href="/HTML/books.html">Books</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Resorces
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Videos</a>
-                        <a href="./quiz.html">Quiz</a>
-                        <a href="./methods.html">Methods</a>
-                        <a href="#">Project Management</a>
+            <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="topnav" id="myTopnav">
+                        <a href="../index.html" class="active">
+                            <i class=" fa fa-home"></i>
+                        </a>
+                        <a href="/HTML/books.html">Books</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Resorces
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Videos</a>
+                                <a href="../../HTML/data/quiz.html">Quiz</a>
+                                <a href="../../HTML/data/methods.html">Methods</a>
+                                <a href="#">Project Management</a>
+                            </div>
+                        </div>
+                        <a href="../../HTML/aboutus.html">About us</a>
+                        <div class="search-container">
+                            <!-- <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a> -->
+                            <!-- Google search bar -->
+                            <gcse:search></gcse:search>
+                        </div>
                     </div>
                 </div>
-                <a href="/HTML/aboutus.html">About us</a>
-                <div class="search-container">
-                    <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
-                    <!-- Google search bar -->
-                    <gcse:search></gcse:search>
+            
+                <div id="main">
+                    <div class="container" onclick="openNav()">
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                    </div>
                 </div>
-            </div>
-        </header>
         <main>
             <div class="flex-container">
                 <SquareGrid>
@@ -58,16 +68,11 @@
                                 <div>Waterfall</div>
                             </div>
                             <div class="back face center">
-                                <p><strong>Waterfall</strong>
-                                    <p>This is nice for exposing more information about an image.
-                                    Any content can go here.</p>
-                                    <p>This is nice for exposing more information about an image.
-                                            Any content can go here.</p>
-                                            <p>This is nice for exposing more information about an image.
-                                                    Any content can go here.</p>
-                                    
-                                <!-- <br> -->
-                                <!-- <p></p> -->
+                                <p>
+                                    <strong>Waterfall</strong>
+                                    <p>This is nice for exposing more information about an image. Any content can go here.</p>
+                                    <p>This is nice for exposing more information about an image. Any content can go here.</p>
+                                    <p>This is nice for exposing more information about an image. Any content can go here.</p>
                             </div>
                         </div>
                     </div>

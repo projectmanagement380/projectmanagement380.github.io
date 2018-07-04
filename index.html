@@ -14,29 +14,20 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Wire+One" rel="stylesheet">
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
-
     <link rel="stylesheet" href="/CSS/main.css">
 </head>
-
 <body>
-    <header class="main-header">
-        <div>
-            <a href="/index.html" class="main-header"></a>
-            <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" alt="Logo" class="main-header_logo">
-            </a>
-        </div>
+    <div id="main-logo">
+        <a href="/index.html" class="main-header"></a>
+        <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" alt="Logo" class="main-header_logo">
+        </a>
 
-        <!--Navigation Menue -->
-        <div class="container" onclick="openNav()">
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
-            </div>
+    </div>
+
+    <!--Navigation Menue -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="topnav" id="myTopnav">
-
-           
-
             <a href="index.html" class="active">
                 <i class=" fa fa-home"></i>
             </a>
@@ -54,21 +45,25 @@
             </div>
             <a href="/HTML/aboutus.html">About us</a>
             <div class="search-container">
-                <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a>
+                <!-- <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a> -->
                 <!-- Google search bar -->
                 <gcse:search></gcse:search>
             </div>
         </div>
+    </div>
 
-    </header>
+    <div id="main">
+        <div class="container" onclick="openNav()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </div>
     <wrapper>
-        <h1 id="main_pm" class="line-1 anim-typewriter">Welcome to Project Management</h1>
+        <h1 id="main_pm">Welcome to Project Management</h1>
     </wrapper>
-
-    <script src="./JS/main.js"></script>
-    <script src="../../JS/reveal.js"></script>
-
 </body>
-
+<script src="./JS/main.js"></script>
+<script src="../../JS/reveal.js"></script>
 
 </html>

@@ -59,8 +59,6 @@
     text-align: center;
     background-color: #ffffa5;
     
-
-    
 }
 
 SquareGrid {
@@ -87,6 +85,12 @@ SquareGrid {
     }
     .flex-container {
         padding-top: 2rem;
+    }
+
+    div.container {
+        position: absolute;
+        display: block;
+        margin: 0 0 0 0px;
     }
 }
 
