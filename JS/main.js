@@ -44,9 +44,8 @@ function dropDownMenu() {
 
 function openNav() {
     document.getElementById("main").style.display = "none";
-    document.getElementById("mySidenav").style.width = "282px";
+    document.getElementById("mySidenav").style.width = "242px";
     document.getElementById("main").style.marginLeft = "250px";
-    // document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
 
 }
 
@@ -54,11 +53,22 @@ function closeNav() {
     document.getElementById("main").style.display = "block";
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
-    //  document.body.style.backgroundImage = "url('../images/white-background.jpeg')";
-    // document.body.style.background.position = "left 10% bottom 25%";
-    // document.body.style.background.attachment = "fixed";
-    // document.body.style.background.repeat = "no-repeat";
-    // document.body.style.backgroundSize = "cover";
+  
+}
+
+var dropdown = document.getElementsByClassName("dropbtn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
 }
 
     
