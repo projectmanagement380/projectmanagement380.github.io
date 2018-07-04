@@ -511,7 +511,7 @@ a.closebtn {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0);
+        background-color: rgba(0, 0, 0, 9);
         overflow-x: hidden;
         transition: 0.2s;
         padding-top: 60px;
@@ -525,9 +525,7 @@ a.closebtn {
         color: #f9f9f9;
         transition: 0.3s;
     }
-    /* .sidenav a:hover {
-        color: #f1f1f1;
-    } */
+
     .sidenav .closebtn {
         position: absolute;
         top: 0;
