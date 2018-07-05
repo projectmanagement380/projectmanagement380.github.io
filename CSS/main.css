@@ -20,9 +20,9 @@
 
 } */
 
-/* html {
+html {
     height: 100%;
-} */
+}
 
 body {
     background: url(/images/white-background.jpeg);
@@ -61,6 +61,8 @@ div.container {
 
 .main-header_logo {
     margin-left: 0.7rem;
+    width: 300px;
+    height: 65px;
 }
 
 #main_pm {

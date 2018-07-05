@@ -73,10 +73,16 @@ SquareGrid {
 }
 
 @media screen and (max-width: 600px) {
-    div.container {
+    /* div.container {
         position: absolute;
         display: block;
         margin: 0 0 0 0px;
+    } */
+
+    div#main-logo {
+        display: flex;
+        width: 70%;
+        float: left;
     }
 }
 
