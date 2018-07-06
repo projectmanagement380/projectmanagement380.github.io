@@ -44,7 +44,7 @@ function dropDownMenu() {
 
 function openNav() {
     document.getElementById("main").style.display = "none";
-    document.getElementById("mySidenav").style.width = "242px";
+    document.getElementById("mySidenav").style.width = "251.10px";
     document.getElementById("main").style.marginLeft = "250px";
     // document.getElementById("rotate").style.transform.rotate = "0.5turn";
 

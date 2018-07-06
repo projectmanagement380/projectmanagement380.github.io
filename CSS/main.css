@@ -469,7 +469,7 @@ a.closebtn {
     
     .dropdown-content {
         background-color: #333333;
-        padding: 0 1rem 0 0.5rem;        
+        padding: 0 1.2rem 0 0.5rem;        
         position: relative;
 
     }
@@ -522,7 +522,7 @@ a.closebtn {
         padding-top: 60px;
     }
     .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 8px 8px 38px;
         text-decoration: none;
         display: inline-block;
         font-size: 1.2rem;
