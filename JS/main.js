@@ -46,6 +46,8 @@ function openNav() {
     document.getElementById("main").style.display = "none";
     document.getElementById("mySidenav").style.width = "242px";
     document.getElementById("main").style.marginLeft = "250px";
+    // document.getElementById("rotate").style.transform.rotate = "0.5turn";
+
 
 }
 
@@ -55,6 +57,11 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
   
 }
+
+// function rotateArrow() {
+//    var rotate = document.getElementById("rotate").style.transform.rotate = "0.5turn";
+//    if(rotate)
+// }
 
 var dropdown = document.getElementsByClassName("dropbtn");
 var i;

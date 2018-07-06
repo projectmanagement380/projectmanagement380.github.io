@@ -41,7 +41,7 @@ div.container {
 
 .container:hover .overlay {
     bottom: 12px;
-    height: 92%;
+    height: 90%;
 }
 
 div.container.item-1 {
@@ -74,10 +74,10 @@ div.container.item-5 {
 
 .text {
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 200;
     position: absolute;
-    padding: 1rem;
+    padding: 0.2rem 1rem 0.5rem 1rem;
     white-space: wrap;
     line-height: 1.3rem;
 }
@@ -101,7 +101,7 @@ div.container.item-5 {
     opacity: 1;
 }
 
-/* @media (min-width: 40rem) {
+@media (min-width: 40rem) {
     .container {
         position: relative;
         width: 25%;
@@ -174,4 +174,4 @@ div.container.item-5 {
         font-weight: bold;
     }
     
-} */
+}

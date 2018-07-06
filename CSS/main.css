@@ -489,7 +489,10 @@ a.closebtn {
         color: #f9f9f9;
     }
 
-   
+    /* .fa-caret-down:hover {
+        transform: rotate(0.5turn);
+    }
+    */
     /* Mobil navigation */
     .menu-icon {
         width: 30px;
