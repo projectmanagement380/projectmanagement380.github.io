@@ -20,9 +20,9 @@
 
 } */
 
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
     background: url(/images/white-background.jpeg);
@@ -42,8 +42,6 @@ body {
     overflow-x: hidden;
     transition: background-color .5s;
     height: 95%;
-}
-
 }
 
 .main-header {
@@ -183,8 +181,7 @@ div.nav-container {
 }
 
 .topnav a:hover {
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: bolder;
+    color: #60b0f4;    
 }
 
 .topnav .search-container {
@@ -273,8 +270,7 @@ input.gsc-input {
 }
 
 button.dropbtn:hover {
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: bolder;
+    color: #60b0f4;    
 
 }
 
