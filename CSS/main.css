@@ -20,9 +20,10 @@
 
 } */
 
-/* html {
+html {
     height: 100%;
-} */
+    box-sizing: border-box;
+}
 
 body {
     background: url(/images/white-background.jpeg);
@@ -40,8 +41,7 @@ body {
     padding-bottom: 6rem;
     min-height: 100%;
     overflow-x: hidden;
-    transition: background-color .5s;
-    height: 95%;
+    /* transition: background-color .5s; */
 }
 
 .main-header {
@@ -84,7 +84,7 @@ div.nav-container {
 
 .text-box {
     position: absolute;
-    top: 50%;
+    top: 68%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -366,13 +366,11 @@ button.dropbtn:hover {
 }
 
 .main-footer {
-    /* margin-top: 40rem; */
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     color: #fff;
-    width: 100%;
     padding: 10px 0;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
