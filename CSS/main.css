@@ -41,11 +41,13 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     transition: background-color .5s;
+    height: 95%;
+}
+
 }
 
 .main-header {
     width: 100vw;
-    /* background-color: rgba(0, 0, 0, 0.7);  */
 }
 
 div.nav-container {
@@ -65,6 +67,7 @@ div.nav-container {
     height: 60px;
 }
 
+/*
 #main_pm {
     font-family: 'Poiret One', cursive;
     text-transform: uppercase;
@@ -79,10 +82,91 @@ div.nav-container {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+*/
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+
+}
+
+.heading-primary {
+    font-family: 'Poiret One', cursive;
+    color: #F8F8FF;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 9px;
+    text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    /*     
+    animation-delay: 3sp 
+    animation-iteration-count: 3;
+*/
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 8.4px;
+    text-align: center;
+    color: #60b0f4;
+    animation: moveInRight 1s ease-out;
+
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+
+    80% {
+        transform: translateX(10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+
+    80% {
+        transform: translateX(-10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
 
 .topnav {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 0;
     width: 100%;
     height: 65.5px;
@@ -100,6 +184,7 @@ div.nav-container {
 
 .topnav a:hover {
     color: rgba(0, 0, 0, 0.7);
+    font-weight: bolder;
 }
 
 .topnav .search-container {
@@ -189,6 +274,8 @@ input.gsc-input {
 
 button.dropbtn:hover {
     color: rgba(0, 0, 0, 0.7);
+    font-weight: bolder;
+
 }
 
 .dropdown-content a {
@@ -538,6 +625,19 @@ a.closebtn {
         padding: 16px;
         display: block;
     }
+
+    .heading-primary-main {
+        font-size: 2rem
+    }
+
+    .heading-primary-sub {
+        font-size: 1.4rem;
+
+    }
+
+    .text-box {
+        top: 200px
+    }
     .nav-container {
         display: block;
         cursor: pointer;
@@ -550,7 +650,7 @@ a.closebtn {
             font-size: 18px;
         }
     }
-    
+
 }
 
 
