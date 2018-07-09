@@ -48,7 +48,7 @@ body {
     /* background-color: rgba(0, 0, 0, 0.7);  */
 }
 
-div.container {
+div.nav-container {
     display: none;
 }
 
@@ -61,8 +61,8 @@ div.container {
 
 .main-header_logo {
     margin-left: 0.7rem;
-    width: 300px;
-    height: 65px;
+    width: 290px;
+    height: 60px;
 }
 
 #main_pm {
@@ -289,7 +289,7 @@ button.dropbtn:hover {
     right: 0;
     left: 0;
     color: #fff;
-    /* width: 100%; */
+    width: 100%;
     padding: 10px 0;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
@@ -437,7 +437,6 @@ a.closebtn {
     div.gsc-control-cse.gsc-control-cse-en {
         display: none;
     }
-    
     .topnav {
         display: flex;
         flex-direction: column;
@@ -451,7 +450,7 @@ a.closebtn {
         width: 25px;
         height: 5px;
     }
-    div.container {
+    div.nav-container {
         position: absolute;
         display: block;
         margin: 0 0 0 0px;
@@ -466,33 +465,26 @@ a.closebtn {
         width: 70%;
         float: left;
     }
-    
     .dropdown-content {
         background-color: #333333;
-        padding: 0 1.2rem 0 0.5rem;        
+        padding: 0 1.2rem 0 0.5rem;
         position: relative;
-
     }
-
-    .dropdown .dropbtn{
+    .dropdown .dropbtn {
         padding: 0.7rem 1rem;
         font-size: 1.2rem;
         font-weight: 100;
-        margin-left: 1rem;
+        margin-left: 1.3rem;
     }
-
     button.dropbtn:hover {
         color: #f9f9f9;
     }
-
     button.dropbtn {
         color: #f9f9f9;
     }
-
-    /* .fa-caret-down:hover {
-        transform: rotate(0.5turn);
-    }
-    */
+    /* .fa-caret-down {
+        transform: rotate(-45deg);
+    } */
     /* Mobil navigation */
     .menu-icon {
         width: 30px;
@@ -530,7 +522,11 @@ a.closebtn {
         color: #f9f9f9;
         transition: 0.3s;
     }
-
+    .open_side_nav {
+        display: none;
+        width: 251.10px;
+        margin-left: 250px;
+    }
     .sidenav .closebtn {
         position: absolute;
         top: 0;
@@ -542,7 +538,7 @@ a.closebtn {
         padding: 16px;
         display: block;
     }
-    .container {
+    .nav-container {
         display: block;
         cursor: pointer;
     }
@@ -554,123 +550,9 @@ a.closebtn {
             font-size: 18px;
         }
     }
-
-
-
-
     
-    /*
-    .topnav a.icon {
-        float: right;
-        display: block;
-        border-bottom: none;
-        color: black;
-    }
-    .topnav a.active:hover {
-        border-bottom: none;
-    }
-    .dropdown:hover {
-        border-bottom: none;
-    }
-    .topnav {
-        background: none;
-        border-top: 1px #ccc solid;
-    }
-    .topnav .gsc-input-box {
-        display: none;
-    }
-    .gsc-search-button-v2 {
-        display: none;
-    }
-
-    .topnav a {
-        padding: 0.5rem 0 0 1rem;
-        color: black;
-
-    }
-
-
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        padding-right: 1rem;
-    }
-    .topnav.responsive .dropdown {
-        float: none;
-    }
-    .topnav.responsive .dropdown-content {
-        position: relative;
-        background: #60b0f4;
-        padding: 1rem;
-
-    }
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-        font-size: 0.9rem;
-    }
-
-    .dropdown-content a {
-        color: #f9f9f9;
-    }
-
-    .dropdown .dropbtn {
-        padding: 0.5rem 0rem 0 1rem;
-        color: black;
-
-    }
-    .topnav a:hover {
-        border-bottom: none;
-    }
-    .main-header_logo {
-        margin-left: 35px;
-        border-width: 100%;
-    }
-    .home {
-        color: aliceblue;
-    }
-    h1 {
-        color: deeppink;
-    }
-    h2 {
-        margin-left: 2.5rem;
-    }
-    .section-title {
-        text-align: center;
-        font-size: 3rem;
-    }
-
-    .topnav .search-container {
-        float: none;
-    }
-
-    .dropbtn:hover {
-        color: black;
-    }
-    .topnav {
-        height: auto;
-    }
-    .topnav a {
-        font-size: 0.9rem;
-    }
-    .topnav a.active {
-        font-size: 1.8rem;
-        margin-top: 0.3rem;
-    }
-    .topnav a.icon {
-        font-size: 1.8rem;
-    } */
 }
+
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
@@ -732,6 +614,13 @@ a.closebtn {
     .main-footer {
         margin-top: 10rem;
     }
+    .container.item-1,
+    .container.item-2,
+    .container.item-3,
+    .container.item-4,
+    .container.item-5 {
+        margin-left: 0.5rem;
+    }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -751,6 +640,13 @@ a.closebtn {
     }
     .topnav .search-container .gsc-control-cse.gsc-control-cse-en {
         width: 317px;
+    }
+    .container.item-1,
+    .container.item-2,
+    .container.item-3,
+    .container.item-4,
+    .container.item-5 {
+        margin-left: 0;
     }
 }
 

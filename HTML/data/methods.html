@@ -2,9 +2,8 @@
 <html lang="en-us">
 
 <head>
-    <!--the code in this element will not be displayed but the information for the web is needed here-->
     <meta charset="utf-8">
-    <title>About Us | projectmanagement380.github.io</title>
+    <title>About Us</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,17 +14,16 @@
 </head>
 
 <body>
-    <div>
+    <div id="main-logo">
         <a href="/index.html" class="main-header">
             <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" class="main-header_logo">
         </a>
     </div>
-    <!--Navigation Menue -->
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="topnav" id="myTopnav">
-            <a href="../index.html" class="active">
+            <a href="../../index.html" class="active">
                 <i class=" fa fa-home"></i>
             </a>
             <a href="/HTML/books.html">Books</a>
@@ -42,15 +40,13 @@
             </div>
             <a href="../../HTML/aboutus.html">About us</a>
             <div class="search-container">
-                <!-- <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a> -->
-                <!-- Google search bar -->
                 <gcse:search></gcse:search>
             </div>
         </div>
     </div>
 
     <div id="main">
-        <div class="container" onclick="openNav()">
+        <div class="nav-container" onclick="openNav()">
             <div class="menu-icon"></div>
             <div class="menu-icon"></div>
             <div class="menu-icon"></div>
@@ -68,7 +64,7 @@
                             <p>
                                 <strong>Waterfall</strong>
                                 <p>This is nice for exposing more information about an image. Any content can go here.</p>
-
+                                <button class="methods-btn" onclick="display">Learn more</button>
                         </div>
                     </div>
                 </div>
@@ -306,9 +302,7 @@
             </SquareGrid>
         </div>
     </main>
-
     <footer class="main-footer">
-        <!--    provides info about sight-->
         <small> &copy;2018 CIT 380
             <p>Background photo by rawpixel on
                 <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>

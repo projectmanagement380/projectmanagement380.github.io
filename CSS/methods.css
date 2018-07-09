@@ -14,6 +14,7 @@
     text-align: center;
     padding: 80px 0px;
     font-size: 32px;
+    /* box-shadow: 1px 1px 2px #60b0f4, 0 0 25px #60b0f4, 0 0 5px #60b0f4; */
 }
 
 .item:hover {
@@ -54,6 +55,20 @@
     background-color: #ffffa5;
 }
 
+.methods-btn {
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: font-family 'Helvetica', sans-serif;
+    background: #ffffa5;
+    color: black;
+}
+
+.methods-btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
 SquareGrid {
     /* // The content width you use on your website */
     --content-width: 80vw;
@@ -73,17 +88,17 @@ SquareGrid {
 }
 
 @media screen and (max-width: 600px) {
-    /* div.container {
+    div.container {
         position: absolute;
         display: block;
         margin: 0 0 0 0px;
-    } */
-
-    div#main-logo {
-        display: flex;
-        width: 70%;
-        float: left;
     }
+
+    .flex-container {
+        display: block;
+        margin: 2rem 0 0 2.5rem;
+    }
+
 }
 
 @media (min-width: 375px) {
