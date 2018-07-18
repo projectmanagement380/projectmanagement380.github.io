@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <!--the code in this element will not be displayed but the information for the web is needed here-->
+    <meta charset="utf-8">
+    <title>Quiz | projectmanagement380.github.io</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,500i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../CSS/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 800) {
+                    $('#scroll').fadeIn();
+                } else {
+                    $('#scroll').fadeOut();
+                }
+            });
+            $('#scroll').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("p.ans").click(function() {
+                //Get the id of the div
+                var qnum = "#" + $(this).parent().attr("id");
+                //Clear previous freeback:
+                $(qnum + " p.ans").removeClass("right wrong");
+                $(qnum + " p span").css("display", "none");
+                //Apply right or wrong class to p and span.
+                var applyclass = "wrong"
+                var spancolor = "red"
+                if ($(this).hasClass("correct")) {
+                    applyclass = "right";
+                    spancolor = "limegreen"
+                }
+                $(this).addClass(applyclass);
+                $(this).children(":first").css("display", "block").css("color", spancolor);
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="main-logo">
+        <a href="../index.html" class="main-header">
+           <img src="/images/LogoMakr_6ZM2sG.png" width="330" height="80" alt="Logo" class="main-header_logo">
+       </a>
+    </div>
+    
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html" class="active">
+               <i class=" fa fa-home"></i>
+           </a>
+                <a href="/HTML/books.html">Books</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Resorces
+                   <i id="toggle" class="fa fa-caret-down"></i>
+               </button>
+                    <div class="dropdown-content">
+                        <a href="/HTML/video.html">Videos</a>
+                        <a href="/HTML/quiz.html">Quiz</a>
+                        <a href="/HTML/methods.html">Methods</a>
+                        <a href="/HTML/methods_quiz.html">Project Management</a>
+                    </div>
+                </div>
+                <a href="/HTML/aboutus.html">About us</a>
+                <div class="search-container">
+                    <gcse:search></gcse:search>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div id="main">
+        <div class="nav-container" onclick="openNav()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </div>
+
+    <main>
+        <div id="wrapper">
+            <section id="q1" class="container">
+                <div class="question" id="question1">
+                    <p>1. Planning is not necessary on small projects?</p>
+                    <p class="ans">a) True
+                        <span>Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q2" class="container">
+                <div class="question" id="question2">
+                    <p>2. Projects are initiated by whomever is in charge?</p>
+                    <p class="ans ">a) True
+                        <span>Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q3" class="container">
+                <div class="question" id="question3">
+                    <p>3. Anyone can be a project manager?</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>Incorrect</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q4" class="container">
+                <div class="question" id="question4">
+                    <p>4. The project manager is responsible for carrying out the project?</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>Incorrect</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q5" class="container">
+                <div class="question" id="question5">
+                    <p>5. Quality is not important in projects?</p>
+                    <p class="ans">a) True
+                        <span>Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q6" class="container">
+                <div class="question" id="question6">
+                    <p>6. The project team needs to spend time clearly defining the project before getting underway?</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>Incorrect</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q7" class="container">
+                <div class="question" id="question7">
+                    <p>7. Negotiating for materials, supplies, and services is not a part of a project manager’s duties?</p>
+                    <p class="ans">a) True
+                        <span>Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q8" class="container">
+                <div class="question" id="question8">
+                    <p>8. Audits are done only at the end of projects to see whether the project is over budget.</p>
+                    <p class="ans">a) True
+                        <span>Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q9" class="container">
+                <div class="question" id="question9">
+                    <p>9. Giving in is never an acceptable strategy for resolving differences.</p>
+                    <p class="ans">a) True
+                        <span>Incorrect</span>
+                    </p>
+                    <p class="ans correct">b) False
+                        <span>Correct</span>
+                    </p>
+                </div>
+            </section>
+            <section id="q10" class="container">
+                <div class="question" id="question10">
+                    <p>10. Testing provides important information on the quality dimension of a project.</p>
+                    <p class="ans correct">a) True
+                        <span>Correct</span>
+                    </p>
+                    <p class="ans">b) False
+                        <span>Incorrect</span>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <a href="javascript(0);" id="scroll" title="Scroll to Top" style="display: none;">
+        <bold id="arrow">&#8679;</bold>
+       </a>
+    <footer class="main-footer">
+        <!--    provides info about sight-->
+        <small> &copy;2018 CIT 380</small>
+        <br>
+        <small>Background photo by rawpixel on </small>
+        <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+
+    </footer>
+    <script src="/JS/reveal.js"></script>
+    <script src="/JS/main.js"></script>
+
+</body>
+
+</html>
+
+
+

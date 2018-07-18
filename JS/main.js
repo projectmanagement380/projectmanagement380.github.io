@@ -1,61 +1,93 @@
-let nav
-
-nav = document.getElementById('navigation');
-
-function toggleMenu() {
-    nav.classList.toggle('navigation--visible');
-}
-
 let nav = document.getElementById('navigation');
 
 function toggleMenu() {
    nav.classList.toggle('navigation--visible');
-    nav.classList.toggle('navigation--visible');
 }
 
 //description buttons
-function bookOneIntro() {
-  var x = document.getElementById("books_one_intro").style.display = "block";
+function toggleIntroOne() {
+   const bookOne = document.getElementById("book_one_intro");
+   bookOne.classList.toggle("open");
 }
 
-function bookTwoIntro() {
-   var x = document.getElementById("books_two_intro");
-   if (x.style.display === "none") {
-       x.style.display = "block";
+function toggleIntroTwo() {
+   const bookTwo = document.getElementById("book_two_intro");
+   bookTwo.classList.toggle("open");
+}
+
+function toggleIntroThree() {
+   const bookThree = document.getElementById("book_three_intro");
+   bookThree.classList.toggle("open");
+}
+
+function toggleIntroFour() {
+   const bookFour = document.getElementById("book_four_intro");
+   bookFour.classList.toggle("open");
+}
+
+// ****** Drop Down Menu ******
+function dropDownMenu() {
+   var dropDawn = document.getElementById("myTopnav");
+   if (dropDawn.className === "topnav") {
+       dropDawn.className += " responsive";
    } else {
-       x.style.display = "none";
+       dropDawn.className = "topnav";
    }
 }
 
-function bookThreeIntro() {
-   var x = document.getElementById("books_three_intro");
-   if (x.style.display === "none") {
-       x.style.display = "block";
-   } else {
-       x.style.display = "none";
-   }
-    var x = document.getElementById("books_one_intro");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+(function () {
+   var cx = '012837430047491262480:eiiweu32siw';
+   var gcse = document.createElement('script');
+   gcse.type = 'text/javascript';
+   gcse.async = true;
+   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+   var s = document.getElementsByTagName('script')[0];
+   s.parentNode.insertBefore(gcse, s);
+})();
+
+//-------->>> Mobil navigation <<<-----------
+
+//function openNav() {
+//   document.getElementById("main").style.display = "none";
+//   document.getElementById("mySidenav").style.width = "251.10px";
+//   document.getElementById("main").style.marginLeft = "250px";
+//
+//
+//}
+//
+//function closeNav() {
+//   document.getElementById("main").style.display = "block";
+//   document.getElementById("mySidenav").style.width = "0";
+//   document.getElementById("main").style.marginLeft = "0";
+//
+//}
+
+// $(function() {
+//     $("#toggle").on('click', function() {  
+//        $(".fa-caret-down").toggleClass("rotate");
+//     });
+// });
+
+var dropdown = document.getElementsByClassName("dropbtn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+   dropdown[i].addEventListener("click", function () {
+       this.classList.toggle("active");
+       var dropdownContent = this.nextElementSibling;
+       if (dropdownContent.style.display === "block") {
+           dropdownContent.style.display = "none";
+       } else {
+           dropdownContent.style.display = "block";
+       }
+   });
 }
 
-function bookTwoIntro() {
-    var x = document.getElementById("books_two_intro");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
 
-function bookThreeIntro() {
-    var x = document.getElementById("books_three_intro");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+
+
+
+
+
+
+

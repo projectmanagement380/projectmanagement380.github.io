@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <!--the code in this element will not be displayed but the information for the web is needed here-->
+    <meta charset="utf-8">
+    <title>Quiz | projectmanagement380.github.io</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,500i,700" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        function methodstouse() {
+            //Input 
+            var need = document.getElementById('need').value;
+
+            var method;
+            if (need == 'Flexibility' || need == 'flexibility') {
+                method = 'You can use Scrum, Crystal Light, Agile Unified Process, Adaptive Software Development, Extreme Programming, Event Chain Methodology, Feature Driven Development, Test Driven Development, or Adaptive Project Framework'
+            } else if (need == 'Process Oriented' || need == 'process oriented') {
+                method = 'You can use Lean, Kanban, Lean Six Sigma, Six Sigma, or Critical Chain Project Management'
+            } else if (need == 'Straight Forward' || need == 'straight forward') {
+                method = 'You can use Waterfall, V-Model, Critical Path Method, Rational Unified Process, Crystal, or Heavy End'
+            } else if (need == 'Product Oriented' || need == 'product oriented') {
+                method = 'You can use Prince2, or Benefits Realization'
+            } else if (need == 'Short Term Project' || need == 'short term project') {
+                method = 'You can use Critical Path Method, Scrum, Lean, or Lean Six Sigma'
+            } else if (need == 'Long Term Project' || need == 'long term project') {
+                method = 'You can use Scrum, or Critical Chain Project Management'
+            } else if (need == 'Small Teams' || need == 'small teams') {
+                method = 'You can use Extreme Programming, Lean, or Lean Six Sigma'
+            } else if (need == 'Risk Management' || need == 'risk management') {
+                method = 'You can use Prince2, Six Sigma, Lean Six Sigma, Event Chain Methodology, or Critical Chain Project Management'
+            } else if (need == 'Controling Need' || need == 'controling need') {
+                method = 'You can use Kanban, Critical Chain Project Management, or Critical Path Method'
+            }
+
+            //Show
+            document.getElementById('output').innerHTML = method;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main-logo">
+        <a href="../index.html" class="main-header">
+           <img src="/images/LogoMakr_6ZM2sG.png" width="330" height="80" alt="Logo" class="main-header_logo">
+       </a>
+    </div>
+
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html" class="active">
+               <i class=" fa fa-home"></i>
+           </a>
+                <a href="/HTML/books.html">Books</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Resorces
+                   <i id="toggle" class="fa fa-caret-down"></i>
+               </button>
+                    <div class="dropdown-content">
+                        <a href="/HTML/video.html">Videos</a>
+                        <a href="/HTML/quiz.html">Quiz</a>
+                        <a href="/HTML/methods.html">Methods</a>
+                        <a href="/HTML/methods_quiz.html">Project Management</a>
+                    </div>
+                </div>
+                <a href="/HTML/aboutus.html">About us</a>
+                <div class="search-container">
+                    <gcse:search></gcse:search>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id='wrapper'>
+            <section class='container'>
+                <h2>What is your need?</h2> 
+                <input type="text" id="need">
+                <br>
+                <button type="button" onclick="methodstouse()">Here is a method for you.</button>
+                <br>
+                <div id="output"></div>
+            </section>
+            <section class='container'>
+                <h2>Needs to choose from</h2>
+                <ul>
+                    <li>Flexibility</li>
+                    <li>Process Oriented</li>
+                    <li>Product Oriented</li>
+                    <li>Straight Forward</li>
+                    <li>Short Term Project</li>
+                    <li>Long Term Project</li>
+                    <li>Small Teams</li>
+                    <li>Risk Management</li>
+                    <li>Controling Need</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+
+    <a href="javascript(0);" id="scroll" title="Scroll to Top" style="display: none;">
+        <bold id="arrow">&#8679;</bold>
+    </a>
+    <footer class="main-footer">
+        <!--    provides info about sight-->
+        <small> &copy;2018 CIT 380</small>
+        <br>
+        <small>Background photo by rawpixel on </small>
+        <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
+
+    </footer>
+    <script src="/JS/reveal.js"></script>
+    <script src="/JS/main.js"></script>
+
+</body>
+
+</html>
