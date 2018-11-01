@@ -22,23 +22,23 @@
             var need = document.getElementById('need').value;
 
             var method;
-            if (need == 'Flexibility' || need == 'flexibility') {
-                method = 'You can use Scrum, Crystal Light, Agile Unified Process, Adaptive Software Development, Extreme Programming, Event Chain Methodology, Feature Driven Development, Test Driven Development, or Adaptive Project Framework'
-            } else if (need == 'Process Oriented' || need == 'process oriented') {
+            if (need == 'Flexibility') {
+                method = 'You can use Scrum, Crystal, Light End, Agile Unified Process,Adaptive Software Development, Extreme Programming, Event Chain Methodology, Feature Driven Development, Test Driven Development, or Adaptive Project Framework'
+            } else if (need == 'Process Oriented') {
                 method = 'You can use Lean, Kanban, Lean Six Sigma, Six Sigma, or Critical Chain Project Management'
-            } else if (need == 'Straight Forward' || need == 'straight forward') {
+            } else if (need == 'Straight Forward') {
                 method = 'You can use Waterfall, V-Model, Critical Path Method, Rational Unified Process, Crystal, or Heavy End'
-            } else if (need == 'Product Oriented' || need == 'product oriented') {
+            } else if (need == 'Product Oriented') {
                 method = 'You can use Prince2, or Benefits Realization'
-            } else if (need == 'Short Term Project' || need == 'short term project') {
+            } else if (need == 'Short Term Project') {
                 method = 'You can use Critical Path Method, Scrum, Lean, or Lean Six Sigma'
-            } else if (need == 'Long Term Project' || need == 'long term project') {
+            } else if (need == 'Long Term Project') {
                 method = 'You can use Scrum, or Critical Chain Project Management'
-            } else if (need == 'Small Teams' || need == 'small teams') {
+            } else if (need == 'Small Teams') {
                 method = 'You can use Extreme Programming, Lean, or Lean Six Sigma'
-            } else if (need == 'Risk Management' || need == 'risk management') {
-                method = 'You can use Prince2, Six Sigma, Lean Six Sigma, Event Chain Methodology, or Critical Chain Project Management'
-            } else if (need == 'Controling Need' || need == 'controling need') {
+            } else if (need == 'Risk Management') {
+                method = 'You can use Prince2 (?), Six Sigma, Lean Six Sigma, Event Chain Methodology, or Critical Chain Project Management'
+            } else if (need == 'Controling Need') {
                 method = 'You can use Kanban, Critical Chain Project Management, or Critical Path Method'
             }
 
@@ -89,7 +89,6 @@
                 <input type="text" id="need">
                 <br>
                 <button type="button" onclick="methodstouse()">Here is a method for you.</button>
-                <br>
                 <div id="output"></div>
             </section>
             <section class='container'>
@@ -127,3 +126,5 @@
 </body>
 
 </html>
+
+

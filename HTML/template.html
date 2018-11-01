@@ -1,26 +1,65 @@
-<!doctype html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Page | Website | Keywords</title>
-    <meta name="description" content="Short Description of the page.">
-    <meta name="viewport" content="width=device-width">
-    <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
-  </head>
-  <body>
-    <header>
-      <h1>Site Name Here</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#" title="Go to home page">Home</a></li>
-      </ul>
-    </nav>
-    <main>
+<!DOCTYPE html>
+<html>
 
-    </main>
-    <footer>
-      &copy;2017 Your name here
-    </footer>
-  </body>
-</html>
+<head>
+    <!--the code in this element will not be displayed but the information for the web is needed here-->
+    <meta charset="utf-8">
+    <title>Home Page | projectmanagement380.github.io</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Wire+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Wire+One" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+    <link rel="stylesheet" href="/CSS/main.css">
+</head>
+
+<body>
+    <div id="main-logo">
+        <a href="/index.html" class="main-header"></a>
+        <img src="/images/LogoMakr_6ZM2sG.png" width="330px" hight="480px" alt="Logo" class="main-header_logo">
+        </a>
+
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/HTML/books.html">Books</a>
+        <div class="dropdown">
+            <button class="dropbtn">Resorces
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Videos</a>
+                <a href="HTML/data/quiz.html">Quiz</a>
+                <a href="./HTML/data/methods.html">Methods</a>
+                <a href="#">Project Management</a>
+            </div>
+        </div>
+        <a href="/HTML/aboutus.html">About us</a>
+        <div class="search-container">
+            <!-- <a href="javascript:void(0);" class="icon" onclick="dropDownMenu()">&#9776;</a> -->
+
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="container" onclick="openNav()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+    </div>
+    <wrapper>
+            <h1 id="main_pm">Welcome to Project Management</h1>
+        </wrapper>
+</body>
+  <script src="../JS/main.js"></script>
+  <script src="../JS/reveal.js"></script>
+
+</html> 
